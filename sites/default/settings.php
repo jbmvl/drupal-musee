@@ -215,8 +215,12 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'sites/default/files/.ht.sqlite',
-      'driver' => 'sqlite',
+      'database' => 'drupal-musee',
+      'username' => 'root',
+      'password' => 'root',
+      'host' => 'localhost',
+      'port' => '',
+      'driver' => 'mysql',
       'prefix' => '',
     ),
   ),
@@ -252,7 +256,7 @@ $update_free_access = FALSE;
  *   $drupal_hash_salt = file_get_contents('/home/example/salt.txt');
  *
  */
-$drupal_hash_salt = 'BTuCIJIdSImyUERQbl80zBk_-BeJJOw3AAkVoCaMDhY';
+$drupal_hash_salt = 'LbTcqeKxeKC7CZQgOUv-v-cs-IUsZ0I8qHtpvqzADJU';
 
 /**
  * Base URL (optional).
