@@ -10,4 +10,4 @@ sites/*/private
 
 #Except the theme directory and gitignore
 !.gitignore
-!sites/*
+!sites/all/themes/basic
