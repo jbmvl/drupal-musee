@@ -7,8 +7,22 @@
 
 // Import variables and mixins to be used.
 @import "_config.sass";
+
+//Import Pages specific styles
 @import "pages/home";
 @import "pages/page";
 @import "pages/oeuvres";
 @import "pages/activites";
 @import "pages/portail";
+
+//General styles
+body, html
+{
+	height: 100%;
+}
+body
+{
+	border: $body_m $body_m_c solid;
+	@include box-sizing(border-box);
+	background-color: $body_bgc;
+}
