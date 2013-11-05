@@ -6,8 +6,9 @@ sites/*/files
 sites/*/private
 
 #Ignore everything
-*
+/*
+/*/
 
 #Except the theme directory and gitignore
 !.gitignore
-!sites/all/themes/basic/*
+!sites/

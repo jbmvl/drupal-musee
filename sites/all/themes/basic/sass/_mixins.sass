@@ -1,0 +1,51 @@
+// Mixins
+// ------
+// Mixins allow you to define styles that can be re-used
+// throughout the stylesheet without needing to resort to
+// non-semantic classes like .float-left. Mixins can also
+// contain full CSS rules, and anything else allowed
+// elsewhere in a Sass document. They can even take
+// arguments which allows you to produce a wide variety
+// of styles with very few mixins.
+//
+// For complete documentation:
+// Sass mixins:		http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#mixins
+// Bourbon mixins: 	http://bourbon.io/docs/
+
+// Import variables for use in Mixins.
+@import _variables.sass
+
+// Rounded corners mixin.
+@mixin border-radius($top: 10px, $right: $top, $bottom: $top, $left: $right)
+  border-radius: $top $right $bottom $left
+  -moz-border-radius: $top $right $bottom $left
+  -webkit-border-top-left-radius: $top
+  -webkit-border-top-right-radius: $right
+  -webkit-border-bottom-right-radius: $bottom
+  -webkit-border-bottom-left-radius: $left
+
+// rem fallback mixin.
+@function strip-unit($num)
+  @return $num / ($num * 0 + 1)
+
+@mixin rem-fallback($property, $values...)
+  $max: length($values)
+  $pxValues: ''
+  $remValues: ''
+
+  @for $i from 1 through $max
+    $value: strip-unit(nth($values, $i))
+    $pxValues: #{$pxValues + $value*16}px
+
+    @if $i < $max
+      $pxValues: #{$pxValues + " "}
+
+  @for $i from 1 through $max
+    $value: strip-unit(nth($values, $i))
+    $remValues: #{$remValues + $value}rem
+
+    @if $i < $max
+      $remValues: #{$remValues + " "}
+  
+  #{$property}: $pxValues
+  #{$property}: $remValues
