@@ -196,16 +196,6 @@
  *     'host' => 'localhost',
  *     'prefix' => '',
  *   );
- */
-    $databases['default']['default'] = array(
-     'driver' => 'mysql',
-     'database' => 'drupal-musee',
-     'username' => 'hetic',
-     'password' => 'denischomel',
-     'host' => '212.198.185.38',
-     'prefix' => '',
-   );
-/*
  *   $databases['default']['default'] = array(
  *     'driver' => 'pgsql',
  *     'database' => 'databasename',
@@ -561,6 +551,3 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  * Remove the leading hash signs to disable.
  */
 # $conf['allow_authorize_operations'] = FALSE;
-
-$conf['theme_default'] = 'bartik'; // thème de Drupal par défaut.
-$conf['admin_theme'] = 'seven'; // thème d'administration de Drupal
