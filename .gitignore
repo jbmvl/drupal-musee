@@ -8,6 +8,7 @@ sites/*/private
 #Ignore everything
 /*
 /*/
+.DS_Store
 
 #Except the theme directory and gitignore
 !.gitignore
