@@ -16,6 +16,30 @@
 @import "pages/portail";
 
 //General styles
+//Fonts
+@font-face {
+    font-family: 'montserrat';
+    src: url('../font/montserrat-regular-webfont.eot');
+    src: url('../font/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/montserrat-regular-webfont.woff') format('woff'),
+         url('../font/montserrat-regular-webfont.ttf') format('truetype'),
+         url('../font/montserrat-regular-webfont.svg#montserratregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('../font/montserrat-bold-webfont.eot');
+    src: url('../font/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/montserrat-bold-webfont.woff') format('woff'),
+         url('../font/montserrat-bold-webfont.ttf') format('truetype'),
+         url('../font/montserrat-bold-webfont.svg#montserratbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+//Styles
 body, html
 {
 	height: 100%;
@@ -36,21 +60,72 @@ body
 	
 	header
 	{
+		line-height: em($menu_h);
+		height: em($menu_h);
 		background-color: black;
-		
+
 		#logo
 		{
 			@include span-columns(3);
 		}
 
-		#navigation
+		nav#navigation
 		{
 			background: none;
 			@include span-columns(9);
 
-			ul#primary
+			ul#primary,
+			a#search_btn
 			{
 				float: right;
+				padding-left: em(20);
+
+				svg
+				{
+					fill: transparentize($white, 0.25);
+					@include transition (all $speed ease-in-out);
+					height: em($menu_fs);
+					width: em($menu_fs);
+				}
+
+				&:hover
+				{
+					svg
+					{
+						fill: $white;
+					}
+				}
+			}
+
+			ul#primary
+			{
+				li
+				{
+					padding: 0 10px;
+
+					a
+					{
+						color: transparentize($white, 0.25);
+						@include transition (all $speed ease-in-out);
+						font-size: em($menu_fs);
+						font-family: 'montserrat';
+						font-weight: normal;
+
+						&.active
+						{
+							color: $white;
+						}
+					}
+
+					&:hover
+					{
+						a
+						{
+							color: $white;
+							text-decoration: none;
+						}
+					}
+				}
 			}
 		}
 	}
