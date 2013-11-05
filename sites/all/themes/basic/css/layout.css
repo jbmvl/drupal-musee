@@ -48,22 +48,9 @@ body:before {
  * 4. Sidebar Left
  * 5. Sideabr Right */
 /* Layout rules. (Disclaimer: do not change if you're not sure you know what you're doing.) */
-#page {
-  *zoom: 1;
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
-  width: 960px; }
-  #page:before, #page:after {
-    content: " ";
-    display: table; }
-  #page:after {
-    clear: both; }
-  @media screen and (max-width: 960px) {
-    #page {
-      width: auto; } }
+@media screen and (max-width: 960px) {
+  #page {
+    width: auto; } }
 
 .no-sidebars #content {
   display: block;
