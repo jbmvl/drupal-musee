@@ -60,6 +60,18 @@ body
 	
 	header
 	{
+
+		div#header-region
+		{
+			div#block-search-form
+			{
+				position: absolute;
+				top: 50px;
+				opacity: 0;
+				@include transition (all $speed ease-in-out);
+			}
+		}
+
 		line-height: em($menu_h);
 		height: em($menu_h);
 		background-color: black;
