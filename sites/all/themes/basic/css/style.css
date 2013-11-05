@@ -151,12 +151,6 @@ div.status {
   border-color: #bbee77; }
 
 /* Region Colors. delete when starting a new theme. */
-#header, #footer,
-#sidebar-first,
-#sidebar-second,
-#navigation {
-  background: rgba(170, 170, 170, 0.2); }
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -246,3 +240,35 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #f1f2f2; }
+  body .container {
+    *zoom: 1;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px; }
+    body .container:before, body .container:after {
+      content: " ";
+      display: table; }
+    body .container:after {
+      clear: both; }
+  body header {
+    background-color: black; }
+    body header #logo {
+      display: block;
+      float: left;
+      margin-right: 1.20482%;
+      width: 24.09639%; }
+      body header #logo:last-child {
+        margin-right: 0; }
+    body header #navigation {
+      background: none;
+      display: block;
+      float: left;
+      margin-right: 1.20482%;
+      width: 74.6988%; }
+      body header #navigation:last-child {
+        margin-right: 0; }
+      body header #navigation ul#primary {
+        float: right; }

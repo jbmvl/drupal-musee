@@ -25,4 +25,34 @@ body
 	border: $body_m $body_m_c solid;
 	@include box-sizing(border-box);
 	background-color: $body_bgc;
+	
+	.container
+	{
+		@include outer-container;
+		margin-left: auto;
+		margin-right: auto;
+		width: $max-width;
+	}	
+	
+	header
+	{
+		background-color: black;
+		
+		#logo
+		{
+			@include span-columns(3);
+		}
+
+		#navigation
+		{
+			background: none;
+			@include span-columns(9);
+
+			ul#primary
+			{
+				float: right;
+			}
+		}
+	}
+
 }
