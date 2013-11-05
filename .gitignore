@@ -12,3 +12,4 @@ sites/*/private
 #Except the theme directory and gitignore
 !.gitignore
 !sites/
+!database.sql
