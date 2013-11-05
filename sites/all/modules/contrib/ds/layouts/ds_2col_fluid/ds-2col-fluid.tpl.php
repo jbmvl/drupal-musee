@@ -7,10 +7,10 @@
 
   // Add sidebar classes so that we can apply the correct width in css.
   if (($left && !$right) || ($right && !$left)) {
-    $attributes['class'] .= ' group-one-column';
+    $classes .= ' group-one-column';
   }
 ?>
-<<?php print $layout_wrapper; print $layout_attributes; ?> class="ds-2col-fluid <?php print $attributes['class'];?> clearfix">
+<<?php print $layout_wrapper; print $layout_attributes; ?> class="ds-2col-fluid <?php print $classes;?> clearfix">
 
   <?php if (isset($title_suffix['contextual_links'])): ?>
   <?php print render($title_suffix['contextual_links']); ?>

@@ -29,21 +29,6 @@ function ds_drush_command() {
     ),
   );
 
-  $items['ds-field'] = array(
-    'description' => 'Create a Display Suite plugin',
-    'arguments' => array(
-      'name'    => 'Name for your Display Suite field class',
-    ),
-    'options' => array(
-      'name'    => 'Name for your class.',
-      'entity'  => 'Name of the entity',
-    ),
-    'examples' => array(
-      'drush ds-field "MyField"' => 'Create a field with only a render function',
-      'drush ds-field "MyTest" --entity=user' => 'Create a field for the user entity',
-    ),
-  );
-
   return $items;
 }
 
@@ -76,8 +61,8 @@ function drush_ds_build($name = NULL) {
   }
 
   // Copy the example templates.
-  $twig_machine_name = strtr($machine_name, '_', '-');
-  drush_op('copy', $ds_layout_path . '/example-layout.html.twig', $layout_path . "/$twig_machine_name.html.twig");
+  $tpl_machine_name = strtr($machine_name, '_', '-');
+  drush_op('copy', $ds_layout_path . '/example-layout.tpl.php', $layout_path . "/$tpl_machine_name.tpl.php");
   drush_op('copy', $ds_layout_path . '/example_layout.inc', $layout_path . "/$machine_name.inc");
 
   // Prepare an array of things that need to be rewritten in our templates.
@@ -122,7 +107,7 @@ function drush_ds_build($name = NULL) {
 
   // Replace example region PHP/HTML code.
   if ($regions) {
-    $find[] = '/  {# regions #}.+{# \/regions #}/s';
+    $find[] = '/  <!-- regions -->.+<!-- \/regions -->/s';
     $replace[] = ds_prepare_regions_html($regions);
     $find[] = "/( \* Regions:\n).+(\n \*\/)/s";
     $replace[] = '$1' . ds_prepare_regions_variable_documentation($regions) . '$2';
@@ -131,7 +116,7 @@ function drush_ds_build($name = NULL) {
   }
 
   // Rewrite templates.
-  drush_op('ds_file_preg_replace', array($layout_path . "/$twig_machine_name.html.twig", $layout_path . "/$machine_name.inc"), $find, $replace);
+  drush_op('ds_file_preg_replace', array($layout_path . "/$tpl_machine_name.tpl.php", $layout_path . "/$machine_name.inc"), $find, $replace);
 
   // Notify user of the newly created templates.
   drush_print(dt('Templates for "!name" created in: !path', array('!name' => $name, '!path' => $layout_path)));
@@ -170,11 +155,9 @@ function ds_prepare_regions_html($region_names) {
     $html_class = drupal_html_class($name);
 
     $output[] = <<<END
-    <{{ \${$machine_name}_wrapper }} class="group-left{{ \${$machine_name}_classes }}">
-      {% if \${$machine_name} is not null %}
-        {{ \${$machine_name} }}
-      {% endif %}
-    </{{ \${$machine_name}_wrapper }}>
+    <<?php print \${$machine_name}_wrapper; ?> class="ds-$html_class<?php print \${$machine_name}_classes; ?>">
+      <?php print \$$machine_name; ?>
+    </<?php print \${$machine_name}_wrapper; ?>>
 END;
   }
 
@@ -232,58 +215,4 @@ END;
   }
 
   return implode("\n\n", $output);
-}
-
-/**
- * Create a Display Suite plugin.
- */
-function drush_ds_field($name = NULL) {
-  // Determine the layout name.
-  if (!isset($name)) {
-    $name = drush_get_option('name');
-  }
-  if (!$name) {
-    drush_die(dt('You need to set a name for your field class'));
-  }
-
-  // We assume you run this command in the root of your module
-  // Fetch the current path
-  $current_path = drush_cwd();
-
-  // Fetch the module name from the path
-  $parts = explode('/', $current_path);
-  $module_name = end($parts);
-
-  // Class path
-  $class_path = $current_path . "/lib/Drupal/$module_name/plugin/DsField/";
-  drush_mkdir($class_path);
-
-  // Determine the path to our example layout templates.
-  $ds_class_path = dirname(__FILE__);
-
-  // Copy the example templates.
-  drush_op('copy', $ds_class_path . '/ExampleField.php', $class_path . "/$name.php");
-
-  // Prepare an array of things that need to be rewritten in our class.
-  $find = array();
-  $replace = array();
-
-  // Replace example text.
-  $find[] = '/ExampleField/';
-  $replace[] = $name;
-  $find[] = '/example_field/';
-  $replace[] = $module_name;
-
-  // Determine entity_type.
-  $entity_type = drush_get_option('entity');
-  if ($entity_type) {
-    $find[] = '/entity_type = \"node\"/';
-    $replace[] = 'entity_type = "' . $entity_type . '"';
-  }
-
-  // Rewrite class.
-  drush_op('ds_file_preg_replace', array($class_path . "/$name.php"), $find, $replace);
-
-  // Notify user of the newly created class.
-  drush_print(dt('"!name" class created in: !class_path', array('!name' => $name, '!class_path' => $class_path)));
 }

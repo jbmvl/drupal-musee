@@ -3,27 +3,48 @@
  * Javascript functionality for Display Suite's administration UI.
  */
 
-(function($, Drupal) {
+(function($) {
 
 Drupal.DisplaySuite = Drupal.DisplaySuite || {};
 Drupal.DisplaySuite.fieldopened = '';
 Drupal.DisplaySuite.layout_original = '';
 
-Drupal.behaviors.DSSummaries = {
+/**
+ * Ctools selection content.
+ */
+Drupal.behaviors.CToolsSelection = {
   attach: function (context) {
-
-    $(context).find('#edit-fs1').drupalSetSummary(function (context) {
-      var fieldtemplates = $('#edit-fs1-field-template', context);
-
-      if (fieldtemplates.is(':checked')) {
-        var fieldtemplate = $('#edit-fs1-ft-default option:selected').text();
-        return Drupal.t('Enabled') + ': ' + Drupal.t(fieldtemplate);
-      }
-
-      return Drupal.t('Disabled');
-    });
+    if ($('#ctools-content-selection').length > 0) {
+      $('#ctools-content-selection .section-link').click(function() {
+        $('#ctools-content-selection .content').hide();
+        container = $(this).attr('id') + '-container';
+        $('#' + container).show();
+        return false;
+      });
+    }
   }
 };
+
+/**
+ * Save the Dynamic field content configuration.
+ */
+$.fn.dsCtoolsContentConfiguration = function (configuration) {
+  $(this[0]).val(configuration);
+}
+
+/**
+ * Update the select content text.
+ */
+$.fn.dsCtoolsContentUpdate = function () {
+  $(this[0]).html(Drupal.t('Click update to save the configuration'));
+}
+
+/**
+ * Save the page after saving a new field.
+ */
+$.fn.dsRefreshDisplayTable = function () {
+  $('#edit-submit').click();
+}
 
 /**
  * Row handlers for the 'Manage display' screen.
@@ -41,8 +62,8 @@ Drupal.fieldUIDisplayOverview.ds = function (row, data) {
   this.$regionSelect = $('select.ds-field-region', row);
   this.$regionSelect.change(Drupal.fieldUIOverview.onChange);
 
-  // Attach change listener to the 'plugin type' select.
-  this.$formatSelect = $('select.field-plugin-type', row);
+  // Attach change listener to the 'formatter type' select.
+  this.$formatSelect = $('select.field-formatter-type', row);
   this.$formatSelect.change(Drupal.fieldUIOverview.onChange);
 
   return this;
@@ -94,77 +115,4 @@ Drupal.fieldUIDisplayOverview.ds.prototype = {
   }
 };
 
-/**
- * Field template.
- */
-Drupal.behaviors.settingsToggle = {
-  attach: function (context) {
-
-    // Bind on click.
-    $('.field-plugin-settings-edit-form', context).once('ds-ft', function() {
-
-      var fieldTemplate = $(this);
-
-      // Bind on field template select button.
-      fieldTemplate.find('.ds-extras-field-template').change(function() {
-        ds_show_expert_settings(fieldTemplate);
-      });
-
-      ds_show_expert_settings(fieldTemplate);
-
-    });
-
-    // Show / hide settings on field template form.
-    function ds_show_expert_settings(element, open) {
-      field = element;
-      ft = $('.ds-extras-field-template', field).val();
-
-      if (ft == 'theme_ds_field_expert') {
-        // Show second, third, fourth, fifth and sixth label.
-        if ($('.lb .form-item:nth-child(1)', field).is(':visible')) {
-          $('.lb .form-item:nth-child(2), .lb .form-item:nth-child(3), .lb .form-item:nth-child(4), .lb .form-item:nth-child(5), .lb .form-item:nth-child(6)', field).show();
-        }
-        // Remove margin from update button.
-        $('.ft-update', field).css({'margin-top': '-10px'});
-        // Show wrappers.
-        $('.ow, .fis, .fi', field).show();
-      }
-      else {
-        // Hide second, third, fourth, fifth and sixth  label.
-        $('.lb .form-item:nth-child(2), .lb .form-item:nth-child(3), .lb .form-item:nth-child(4), .lb .form-item:nth-child(5), .lb .form-item:nth-child(6)', field).hide();
-        // Add margin on update button.
-        $('.ft-update', field).css({'margin-top': '10px'});
-        // Hide wrappers.
-        $('.ow, .fis, .fi', field).hide();
-      }
-
-      // Colon.
-      if (ft == 'theme_field' || ft == 'theme_ds_field_reset') {
-        $('.colon-checkbox', field).parent().hide();
-      }
-      else if ($('.lb .form-item:nth-child(1)', field).is(':visible')) {
-        $('.colon-checkbox', field).parent().show();
-      }
-
-      // CSS classes.
-      if (ft != 'theme_ds_field_expert' && ft != 'theme_ds_field_reset') {
-        $('.field-classes', field).show();
-      }
-      else {
-        $('.field-classes', field).hide();
-      }
-    }
-
-    $('.label-change').change(function() {
-      var field = $(this).parents('tr');
-      if ($('.field-template', field).length > 0) {
-        ft = $('.ds-extras-field-template', field).val();
-        if (ft == 'theme_field' || ft == 'theme_ds_field_reset') {
-          $('.colon-checkbox', field).parent().hide();
-        }
-      }
-    });
-  }
-};
-
-})(jQuery, Drupal);
+})(jQuery);
