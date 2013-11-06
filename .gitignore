@@ -12,4 +12,4 @@ sites/*/private
 #Except the theme directory and gitignore
 !.gitignore
 !sites/
-!database.sql
+!drupal-musee.sql.gz
