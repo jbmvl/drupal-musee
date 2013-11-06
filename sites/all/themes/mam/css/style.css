@@ -351,6 +351,8 @@ body {
               cursor: pointer;
               border: 1px solid #a4942a;
               background-color: #a4942a; }
+            body div#header div#block-search-form div.content input.form-submit:focus {
+              outline: 0; }
     body div#header #logo {
       display: block;
       float: left;

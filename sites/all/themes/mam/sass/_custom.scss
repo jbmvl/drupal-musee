@@ -118,6 +118,11 @@ body
 							border: 1px solid $gold;
 							background-color: $gold;
 						}
+
+						&:focus
+						{
+							outline: 0;
+						}
 					}
 				}
 			}

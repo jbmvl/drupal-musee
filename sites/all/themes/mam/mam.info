@@ -39,6 +39,6 @@ settings[shortcut_module_link] = 0
 
 
 ; Information added by drupal.org packaging script on 2013-08-08
-version = "7.23"
+version = "42"
 project = "drupal"
 datestamp = "1375928238"
