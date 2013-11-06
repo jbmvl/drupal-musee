@@ -1,0 +1,12 @@
+// Page des Collections
+body
+{
+	&.page-collections
+	{
+		h1#page-title,
+		h2.pane-title
+		{
+			display: none;
+		}
+	}
+}
