@@ -3,22 +3,26 @@
 	$jq(document).ready(function()
 	{
 
-		$jq("#block-search-form").hide();
-		var header_h = $jq("header").height();
+		var header_h = $jq("#header").height();
+		
 		$jq("a#search_btn").on("click",
 		
-			function()
-			{
-
-			$jq('#block-search-form').show(
-			    function(){
-
-				$jq(this).animate({
-					opacity: 1,
-					top: header_h+25
-				}, 300);
-
-		    	});
+		function()
+		{
+			$jq("#header").css("margin-top", "60px");
+			$jq("#block-search-form").css("height","60px");
+			$jq(this).toggleClass('hide');
+			$jq("a#close_btn").toggleClass('hide');
+		});
+		
+		$jq("a#close_btn").on("click",
+		
+		function()
+		{
+			$jq("#header").css("margin-top", "0");
+			$jq("#block-search-form").css("height","0");
+			$jq(this).toggleClass('hide');
+			$jq("a#search_btn").toggleClass('hide');
 		});
 
 	});

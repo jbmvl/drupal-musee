@@ -56,17 +56,71 @@ body
 		margin-left: auto;
 		margin-right: auto;
 		width: $max-width;
+		position: relative;
 	}	
 	
-
 	div#header
 	{
+		margin-top: 0;
+		@include transition (all $speed*1.5 ease-in-out);
+
 		div#block-search-form
 		{
 			position: absolute;
-			top: 50px;
-			opacity: 0;
-			@include transition (all $speed ease-in-out);
+			top: -60px;
+			right: 0;
+			height: 0;
+			overflow: hidden;
+			@include outer-container;
+			width: $max-width;
+			@include transition (all $speed*1.5 ease-in-out);
+
+			div.content
+			{
+				width: 80%;
+				margin: 0 auto;
+
+				input
+				{
+					line-height: 30px;
+					height: 40px;
+					margin: 0;
+					padding: 5px 10px;
+					margin-top: 10px;
+					@include transition (all $speed ease-in-out);
+
+					&.form-text
+					{
+						@include span-columns(10 of 12);
+						border: 1px solid $white;
+						background-color: $white;
+
+						&:focus
+						{
+							outline: 0;
+							border: 1px solid $dark_gray;
+							border-right: 0;
+						}
+					}
+					&.form-submit
+					{
+						@include span-columns(2 of 12);
+						border: 1px solid $dark_gray;
+						background-color: $dark_gray;
+						color: $white;
+						text-transform: uppercase;
+						font-family: "montserrat";
+						@include transition (all $speed ease-in-out);
+
+						&:hover
+						{
+							cursor: pointer;
+							border: 1px solid $gold;
+							background-color: $gold;
+						}
+					}
+				}
+			}
 		}
 
 		line-height: em($menu_h);
@@ -76,6 +130,7 @@ body
 		#logo
 		{
 			@include span-columns(3);
+			height: em($menu_h);
 		}
 
 		div#main-menu
@@ -83,10 +138,14 @@ body
 			background: none;
 			@include span-columns(9);
 
-			a#search_btn
+			a#search_btn,
+			a#close_btn
 			{
-				float: right;
-				padding-left: em(20);
+				position: absolute;
+				right: 0;
+				color: transparentize($white, 0.25);
+				@include transition (all $speed ease-in-out);
+				opacity: 1;
 
 				svg
 				{
@@ -98,10 +157,19 @@ body
 
 				&:hover
 				{
+					color: $white;
+					text-decoration: none;
+
 					svg
 					{
 						fill: $white;
 					}
+				}
+
+				&.hide
+				{
+					opacity: 0;
+					display: none;
 				}
 			}
 
@@ -138,8 +206,31 @@ body
 							text-decoration: none;
 						}
 					}
+
+					&.last
+					{
+						padding-right: 30px;
+					}
 				}
 			}
+		}
+	}
+
+	#breadcrumb
+	{
+		height: em(50);
+		background-color: $dark_gray;
+
+		div.breadcrumb
+		{
+
+			@include outer-container;
+
+			a
+			{
+				line-height: em(50);
+				color: $white;
+			}		
 		}
 	}
 

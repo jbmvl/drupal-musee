@@ -265,30 +265,98 @@ body {
     margin-right: auto;
     margin-left: auto;
     margin-right: auto;
-    width: 960px; }
+    width: 960px;
+    position: relative; }
     body .container:before, body .container:after {
       content: " ";
       display: table; }
     body .container:after {
       clear: both; }
   body div#header {
+    margin-top: 0;
+    -webkit-transition: all 0.45s ease-in-out;
+    -moz-transition: all 0.45s ease-in-out;
+    -ms-transition: all 0.45s ease-in-out;
+    -o-transition: all 0.45s ease-in-out;
+    transition: all 0.45s ease-in-out;
     line-height: 4.625em;
     height: 4.625em;
     background-color: black; }
     body div#header div#block-search-form {
       position: absolute;
-      top: 50px;
-      opacity: 0;
-      -webkit-transition: all 0.3s ease-in-out;
-      -moz-transition: all 0.3s ease-in-out;
-      -ms-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out; }
+      top: -60px;
+      right: 0;
+      height: 0;
+      overflow: hidden;
+      *zoom: 1;
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 960px;
+      -webkit-transition: all 0.45s ease-in-out;
+      -moz-transition: all 0.45s ease-in-out;
+      -ms-transition: all 0.45s ease-in-out;
+      -o-transition: all 0.45s ease-in-out;
+      transition: all 0.45s ease-in-out; }
+      body div#header div#block-search-form:before, body div#header div#block-search-form:after {
+        content: " ";
+        display: table; }
+      body div#header div#block-search-form:after {
+        clear: both; }
+      body div#header div#block-search-form div.content {
+        width: 80%;
+        margin: 0 auto; }
+        body div#header div#block-search-form div.content input {
+          line-height: 30px;
+          height: 40px;
+          margin: 0;
+          padding: 5px 10px;
+          margin-top: 10px;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out; }
+          body div#header div#block-search-form div.content input.form-text {
+            display: block;
+            float: left;
+            margin-right: 1.20482%;
+            width: 83.13253%;
+            border: 1px solid #fefefe;
+            background-color: #fefefe; }
+            body div#header div#block-search-form div.content input.form-text:last-child {
+              margin-right: 0; }
+            body div#header div#block-search-form div.content input.form-text:focus {
+              outline: 0;
+              border: 1px solid #262626;
+              border-right: 0; }
+          body div#header div#block-search-form div.content input.form-submit {
+            display: block;
+            float: left;
+            margin-right: 1.20482%;
+            width: 15.66265%;
+            border: 1px solid #262626;
+            background-color: #262626;
+            color: #fefefe;
+            text-transform: uppercase;
+            font-family: "montserrat";
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out; }
+            body div#header div#block-search-form div.content input.form-submit:last-child {
+              margin-right: 0; }
+            body div#header div#block-search-form div.content input.form-submit:hover {
+              cursor: pointer;
+              border: 1px solid #a4942a;
+              background-color: #a4942a; }
     body div#header #logo {
       display: block;
       float: left;
       margin-right: 1.20482%;
-      width: 24.09639%; }
+      width: 24.09639%;
+      height: 4.625em; }
       body div#header #logo:last-child {
         margin-right: 0; }
     body div#header div#main-menu {
@@ -299,10 +367,19 @@ body {
       width: 74.6988%; }
       body div#header div#main-menu:last-child {
         margin-right: 0; }
-      body div#header div#main-menu a#search_btn {
-        float: right;
-        padding-left: 1.25em; }
-        body div#header div#main-menu a#search_btn svg {
+      body div#header div#main-menu a#search_btn,
+      body div#header div#main-menu a#close_btn {
+        position: absolute;
+        right: 0;
+        color: rgba(254, 254, 254, 0.75);
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        opacity: 1; }
+        body div#header div#main-menu a#search_btn svg,
+        body div#header div#main-menu a#close_btn svg {
           fill: rgba(254, 254, 254, 0.75);
           -webkit-transition: all 0.3s ease-in-out;
           -moz-transition: all 0.3s ease-in-out;
@@ -311,8 +388,17 @@ body {
           transition: all 0.3s ease-in-out;
           height: 0.875em;
           width: 0.875em; }
-        body div#header div#main-menu a#search_btn:hover svg {
-          fill: #fefefe; }
+        body div#header div#main-menu a#search_btn:hover,
+        body div#header div#main-menu a#close_btn:hover {
+          color: #fefefe;
+          text-decoration: none; }
+          body div#header div#main-menu a#search_btn:hover svg,
+          body div#header div#main-menu a#close_btn:hover svg {
+            fill: #fefefe; }
+        body div#header div#main-menu a#search_btn.hide,
+        body div#header div#main-menu a#close_btn.hide {
+          opacity: 0;
+          display: none; }
       body div#header div#main-menu ul#main-menu-links {
         list-style: none;
         margin: 0;
@@ -335,3 +421,21 @@ body {
           body div#header div#main-menu ul#main-menu-links li:hover a {
             color: #fefefe;
             text-decoration: none; }
+          body div#header div#main-menu ul#main-menu-links li.last {
+            padding-right: 30px; }
+  body #breadcrumb {
+    height: 3.125em;
+    background-color: #262626; }
+    body #breadcrumb div.breadcrumb {
+      *zoom: 1;
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto; }
+      body #breadcrumb div.breadcrumb:before, body #breadcrumb div.breadcrumb:after {
+        content: " ";
+        display: table; }
+      body #breadcrumb div.breadcrumb:after {
+        clear: both; }
+      body #breadcrumb div.breadcrumb a {
+        line-height: 3.125em;
+        color: #fefefe; }
