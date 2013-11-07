@@ -1,0 +1,1 @@
+Drupal.locale = { 'pluralFormula': function ($n) { return Number(($n>1)); }, 'strings': {"":{"Please wait...":"Veuillez patienter...","Configure":"Configurer"}} };
