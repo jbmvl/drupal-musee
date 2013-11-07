@@ -1,0 +1,30 @@
+// Page des Collections
+body
+{
+	&.page-votre-visite
+	{
+		h1#page-title { display: none; }
+
+		.titre,
+		{
+			margin-top: 372px;
+			padding: 35px;
+			background: black;
+			color: white;
+		}
+
+		.pane-viewmap {
+
+			h2 { display: none; }
+			.pane-content { width: 100%; height: 500px; }
+			.gmap { width: 100%!important;  height: 500px!important; }
+		}
+
+		div.view-content
+		{
+			@include outer-container;
+
+		}
+
+	}
+}
