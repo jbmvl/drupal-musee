@@ -584,6 +584,14 @@ body.page-votre-visite div.panel-pane:not(.pane-viewmap) {
     background: url(../images/Bkg_two.jpg);
     background-size: cover;
     color: white; }
+  body.page-votre-visite div.panel-pane:not(.pane-viewmap) div.panel-pane h2, body.page-votre-visite div.panel-pane:not(.pane-viewmap) div.panel-pane span.views-label {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'montserrat', sans-serif;
+    letter-spacing: .3em;
+    margin-bottom: 20px; }
+  body.page-votre-visite div.panel-pane:not(.pane-viewmap) div.panel-pane h2 {
+    border-bottom: 1px solid; }
 
 @font-face {
   font-family: 'montserrat';
@@ -782,11 +790,3 @@ body {
       body #breadcrumb div.breadcrumb a {
         line-height: 3.125em;
         color: #fefefe; }
-  body div.panel-pane h2, body div.panel-pane span.views-label {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: 'montserrat', sans-serif;
-    letter-spacing: .3em;
-    margin-bottom: 20px; }
-  body div.panel-pane h2 {
-    border-bottom: 1px solid; }
