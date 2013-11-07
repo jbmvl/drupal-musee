@@ -43,8 +43,12 @@
 html
 {
 	min-height: 100%;
-	@include box-sizing(border-box);
 	border: $body_m $body_m_c solid;
+}
+*
+{
+	@include box-sizing(border-box);
+	@include backface-visibility(hidden);
 }
 body
 {
