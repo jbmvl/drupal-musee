@@ -8,5 +8,115 @@ body
 		{
 			display: none;
 		}
+
+		div.view-content
+		{
+			@include outer-container;
+
+			div.views-row
+			{
+				text-align: center;
+				position: relative;
+				margin: em(5) 0;
+
+				&.views-row-first
+				{
+					margin-top: em(50);
+				}
+
+				article
+				{
+					position: absolute;
+					color: $white;
+					z-index: 1;
+					background-image: url("../images/trame.png");
+
+					h1,
+					h2,
+					p.date
+					{
+						font-family: "montserrat";
+						text-transform: uppercase;
+						letter-spacing: em(2);
+					}
+
+					h1
+					{
+						font-size: em(14);
+						margin-top: em(60);
+						padding: 0;
+					}
+
+					h2
+					{
+						font-size: em(24);
+						margin: em(5);					
+					}
+
+					p
+					{
+						
+						@include span-columns(10 of 12);
+						margin: 0 auto;
+						float: none;
+						margin-top: em(20);
+
+						&.date
+						{
+							color: $gray;
+							margin-top: 0;
+						}
+					}
+
+					p,
+					a
+					{
+						font-family: 'Gentium Book Basic', serif;
+						font-size: em(14);
+					}
+
+					a
+					{
+						display: inline-block;
+						padding: em(10) em(25);
+						background-color: white;
+						color: black;
+						font-weight: bold;
+						@include transition (all $speed ease-in-out);
+						margin-top: em(30);
+					}
+				}
+
+				div.field-content
+				{	
+					line-height: 0;
+					background-color: black;
+					img
+					{
+						opacity: .7;
+						@include transition (all $speed ease-in-out);
+					}
+				}
+
+				&:hover
+				{
+					a
+					{
+						text-decoration: none;
+						background-color: $gold;
+						color: $white;						
+					}
+					div.field-content
+					{
+						img
+						{
+							opacity: .2;
+						}						
+					}
+
+				}				
+			}
+
+		}
 	}
 }

@@ -49,6 +49,7 @@
 <head profile="<?php print $grddl_profile; ?>">
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
+  <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <?php print $styles; ?>
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script type="text/javascript">

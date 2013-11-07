@@ -234,6 +234,85 @@ body:before {
 body.page-collections h1#page-title,
 body.page-collections h2.pane-title {
   display: none; }
+body.page-collections div.view-content {
+  *zoom: 1;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto; }
+  body.page-collections div.view-content:before, body.page-collections div.view-content:after {
+    content: " ";
+    display: table; }
+  body.page-collections div.view-content:after {
+    clear: both; }
+  body.page-collections div.view-content div.views-row {
+    text-align: center;
+    position: relative;
+    margin: 0.3125em 0; }
+    body.page-collections div.view-content div.views-row.views-row-first {
+      margin-top: 3.125em; }
+    body.page-collections div.view-content div.views-row article {
+      position: absolute;
+      color: #fefefe;
+      z-index: 1;
+      background-image: url("../images/trame.png"); }
+      body.page-collections div.view-content div.views-row article h1,
+      body.page-collections div.view-content div.views-row article h2,
+      body.page-collections div.view-content div.views-row article p.date {
+        font-family: "montserrat";
+        text-transform: uppercase;
+        letter-spacing: 0.125em; }
+      body.page-collections div.view-content div.views-row article h1 {
+        font-size: 0.875em;
+        margin-top: 3.75em;
+        padding: 0; }
+      body.page-collections div.view-content div.views-row article h2 {
+        font-size: 1.5em;
+        margin: 0.3125em; }
+      body.page-collections div.view-content div.views-row article p {
+        display: block;
+        float: left;
+        margin-right: 1.20482%;
+        width: 83.13253%;
+        margin: 0 auto;
+        float: none;
+        margin-top: 1.25em; }
+        body.page-collections div.view-content div.views-row article p:last-child {
+          margin-right: 0; }
+        body.page-collections div.view-content div.views-row article p.date {
+          color: #a8a8a8;
+          margin-top: 0; }
+      body.page-collections div.view-content div.views-row article p,
+      body.page-collections div.view-content div.views-row article a {
+        font-family: 'Gentium Book Basic', serif;
+        font-size: 0.875em; }
+      body.page-collections div.view-content div.views-row article a {
+        display: inline-block;
+        padding: 0.625em 1.5625em;
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        margin-top: 1.875em; }
+    body.page-collections div.view-content div.views-row div.field-content {
+      line-height: 0;
+      background-color: black; }
+      body.page-collections div.view-content div.views-row div.field-content img {
+        opacity: .7;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+    body.page-collections div.view-content div.views-row:hover a {
+      text-decoration: none;
+      background-color: #a4942a;
+      color: #fefefe; }
+    body.page-collections div.view-content div.views-row:hover div.field-content img {
+      opacity: .2; }
 
 @font-face {
   font-family: 'montserrat';
