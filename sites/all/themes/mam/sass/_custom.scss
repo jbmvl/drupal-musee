@@ -245,9 +245,6 @@ body
 	}
 
 
-
-
-
 	div.panel-pane
 	{
 		h2, span.views-label {
@@ -255,18 +252,11 @@ body
 			font-weight: bold;
 			font-family: 'montserrat', sans-serif;
 			letter-spacing: .3em;
+
+			margin-bottom: 20px;
 		}
 
-		h2::after {
-			content: ".";
-			font-size: 0.001px;
-			border-bottom: 1px solid black;
-			display: inline-block;
-			vertical-align: top;
-			width: 200px;
-			height: 23px;
-		}
-
+		h2 { border-bottom: 1px solid; }
 	}
 
 }

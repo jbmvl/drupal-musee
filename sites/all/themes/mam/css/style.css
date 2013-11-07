@@ -454,17 +454,18 @@ body.page-votre-visite .pane-viewmap {
     width: 100% !important;
     height: 500px !important; }
 body.page-votre-visite div.panel-pane:not(.pane-viewmap) {
-  *zoom: 1;
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 60px;
-  margin-bottom: 60px; }
-  body.page-votre-visite div.panel-pane:not(.pane-viewmap):before, body.page-votre-visite div.panel-pane:not(.pane-viewmap):after {
-    content: " ";
-    display: table; }
-  body.page-votre-visite div.panel-pane:not(.pane-viewmap):after {
-    clear: both; }
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  body.page-votre-visite div.panel-pane:not(.pane-viewmap) .pane-content, body.page-votre-visite div.panel-pane:not(.pane-viewmap) .pane-title {
+    *zoom: 1;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto; }
+    body.page-votre-visite div.panel-pane:not(.pane-viewmap) .pane-content:before, body.page-votre-visite div.panel-pane:not(.pane-viewmap) .pane-content:after, body.page-votre-visite div.panel-pane:not(.pane-viewmap) .pane-title:before, body.page-votre-visite div.panel-pane:not(.pane-viewmap) .pane-title:after {
+      content: " ";
+      display: table; }
+    body.page-votre-visite div.panel-pane:not(.pane-viewmap) .pane-content:after, body.page-votre-visite div.panel-pane:not(.pane-viewmap) .pane-title:after {
+      clear: both; }
   body.page-votre-visite div.panel-pane:not(.pane-viewmap) div.view-votre-visite-acces .views-field {
     float: left;
     display: block;
@@ -475,6 +476,13 @@ body.page-votre-visite div.panel-pane:not(.pane-viewmap) {
     font-family: 'Gentium Book Basic', serif; }
     body.page-votre-visite div.panel-pane:not(.pane-viewmap) div.view-votre-visite-acces .views-field:last-child {
       margin-right: 0; }
+  body.page-votre-visite div.panel-pane:not(.pane-viewmap).pane-votre-visite-horaires {
+    background: url(../images/Bkg_one.jpg);
+    background-size: cover; }
+  body.page-votre-visite div.panel-pane:not(.pane-viewmap).pane-votre-visite-tarifs {
+    background: url(../images/Bkg_two.jpg);
+    background-size: cover;
+    color: white; }
 
 @font-face {
   font-family: 'montserrat';
@@ -676,12 +684,7 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     font-family: 'montserrat', sans-serif;
-    letter-spacing: .3em; }
-  body div.panel-pane h2::after {
-    content: ".";
-    font-size: 0.001px;
-    border-bottom: 1px solid black;
-    display: inline-block;
-    vertical-align: top;
-    width: 200px;
-    height: 23px; }
+    letter-spacing: .3em;
+    margin-bottom: 20px; }
+  body div.panel-pane h2 {
+    border-bottom: 1px solid; }

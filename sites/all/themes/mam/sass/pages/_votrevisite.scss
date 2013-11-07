@@ -24,7 +24,9 @@ body
 
 		div.panel-pane:not(.pane-viewmap)
 		{
-			@include outer-container;
+			.pane-content, .pane-title {
+				@include outer-container;
+			}
 
 			div.view-votre-visite-acces {
 
@@ -37,11 +39,22 @@ body
 				}
 			}
 
-			margin-top: 60px;
-			margin-bottom: 60px;
+			padding-top: 60px;
+			padding-bottom: 60px;
+
+			&.pane-votre-visite-horaires {
+				background: url(../images/Bkg_one.jpg);
+				background-size: cover;
+			}
+
+			&.pane-votre-visite-tarifs {
+				background: url(../images/Bkg_two.jpg);
+				background-size: cover;
+
+				color: white;
+			}
  
 		}
-
 
 
 	}
