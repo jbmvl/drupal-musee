@@ -233,44 +233,129 @@ body:before {
       background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0, red 0, red 10.90909%, rgba(0, 0, 0, 0) 10.90909%, rgba(0, 0, 0, 0) 12.72727%, red 12.72727%, red 23.63636%, rgba(0, 0, 0, 0) 23.63636%, rgba(0, 0, 0, 0) 25.45455%, red 25.45455%, red 36.36364%, rgba(0, 0, 0, 0) 36.36364%, rgba(0, 0, 0, 0) 38.18182%, red 38.18182%, red 49.09091%, rgba(0, 0, 0, 0) 49.09091%, rgba(0, 0, 0, 0) 50.90909%, red 50.90909%, red 61.81818%, rgba(0, 0, 0, 0) 61.81818%, rgba(0, 0, 0, 0) 63.63636%, red 63.63636%, red 74.54545%, rgba(0, 0, 0, 0) 74.54545%, rgba(0, 0, 0, 0) 76.36364%, red 76.36364%, red 87.27273%, rgba(0, 0, 0, 0) 87.27273%, rgba(0, 0, 0, 0) 89.09091%, red 89.09091%, red 100.0%, rgba(0, 0, 0, 0) 100.0%);
       background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0, red 0, red 10.90909%, rgba(0, 0, 0, 0) 10.90909%, rgba(0, 0, 0, 0) 12.72727%, red 12.72727%, red 23.63636%, rgba(0, 0, 0, 0) 23.63636%, rgba(0, 0, 0, 0) 25.45455%, red 25.45455%, red 36.36364%, rgba(0, 0, 0, 0) 36.36364%, rgba(0, 0, 0, 0) 38.18182%, red 38.18182%, red 49.09091%, rgba(0, 0, 0, 0) 49.09091%, rgba(0, 0, 0, 0) 50.90909%, red 50.90909%, red 61.81818%, rgba(0, 0, 0, 0) 61.81818%, rgba(0, 0, 0, 0) 63.63636%, red 63.63636%, red 74.54545%, rgba(0, 0, 0, 0) 74.54545%, rgba(0, 0, 0, 0) 76.36364%, red 76.36364%, red 87.27273%, rgba(0, 0, 0, 0) 87.27273%, rgba(0, 0, 0, 0) 89.09091%, red 89.09091%, red 100.0%, rgba(0, 0, 0, 0) 100.0%); } }
 
-body.page-collections h1#page-title,
-body.page-collections h2.pane-title {
+body.page-accueil h1#page-title {
   display: none; }
-body.page-collections div.view-content {
+body.page-accueil div#highlighted {
   *zoom: 1;
   max-width: 960px;
   margin-left: auto;
   margin-right: auto; }
-  body.page-collections div.view-content:before, body.page-collections div.view-content:after {
+  body.page-accueil div#highlighted:before, body.page-accueil div#highlighted:after {
     content: " ";
     display: table; }
-  body.page-collections div.view-content:after {
+  body.page-accueil div#highlighted:after {
     clear: both; }
-  body.page-collections div.view-content div.views-row {
+  body.page-accueil div#highlighted h2.pane-title {
+    display: none; }
+  body.page-accueil div#highlighted article {
+    float: left;
+    display: block;
+    margin-right: 1.20482%;
+    width: 49.39759%;
+    padding: 1.875em;
+    float: none;
+    background-color: black;
+    color: #fefefe; }
+    body.page-accueil div#highlighted article:last-child {
+      margin-right: 0; }
+    body.page-accueil div#highlighted article h1,
+    body.page-accueil div#highlighted article p.date,
+    body.page-accueil div#highlighted article h2 {
+      font-family: "montserrat";
+      letter-spacing: 0.125em; }
+    body.page-accueil div#highlighted article h1 {
+      font-size: 1.5em;
+      margin: 0;
+      padding: 0;
+      text-transform: uppercase;
+      font-weight: bold; }
+    body.page-accueil div#highlighted article h2 {
+      font-family: "montserrat";
+      font-size: 1em;
+      margin: 0; }
+    body.page-accueil div#highlighted article p.date {
+      font-family: "montserrat";
+      font-size: 0.875em;
+      margin: 0;
+      color: #c7c7c7; }
+    body.page-accueil div#highlighted article p,
+    body.page-accueil div#highlighted article a {
+      font-family: 'Gentium Book Basic'; }
+    body.page-accueil div#highlighted article a {
+      font-weight: bold;
+      color: #fefefe; }
+body.page-accueil div.teaser-collections {
+  *zoom: 1;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto; }
+  body.page-accueil div.teaser-collections:before, body.page-accueil div.teaser-collections:after {
+    content: " ";
+    display: table; }
+  body.page-accueil div.teaser-collections:after {
+    clear: both; }
+  body.page-accueil div.teaser-collections div.views-row-1 {
+    float: left;
+    display: block;
+    width: 59.03614%;
+    float: none; }
+    body.page-accueil div.teaser-collections div.views-row-1:last-child {
+      width: 57.83133%; }
+    body.page-accueil div.teaser-collections div.views-row-1 article {
+      background-color: #fefefe;
+      overflow: hidden; }
+      body.page-accueil div.teaser-collections div.views-row-1 article aside {
+        float: left;
+        display: block;
+        width: 58.33333%;
+        line-height: 0; }
+        body.page-accueil div.teaser-collections div.views-row-1 article aside:last-child {
+          width: 56.25%; }
+        body.page-accueil div.teaser-collections div.views-row-1 article aside img {
+          width: 100%; }
+
+body.page-collections h1#page-title,
+body.page-collections h2.pane-title, body.page-expositions h1#page-title,
+body.page-expositions h2.pane-title {
+  display: none; }
+body.page-collections div.view-content, body.page-expositions div.view-content {
+  *zoom: 1;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto; }
+  body.page-collections div.view-content:before, body.page-collections div.view-content:after, body.page-expositions div.view-content:before, body.page-expositions div.view-content:after {
+    content: " ";
+    display: table; }
+  body.page-collections div.view-content:after, body.page-expositions div.view-content:after {
+    clear: both; }
+  body.page-collections div.view-content div.views-row, body.page-expositions div.view-content div.views-row {
     text-align: center;
     position: relative;
     margin: 0.3125em 0; }
-    body.page-collections div.view-content div.views-row.views-row-first {
+    body.page-collections div.view-content div.views-row.views-row-first, body.page-expositions div.view-content div.views-row.views-row-first {
       margin-top: 3.125em; }
-    body.page-collections div.view-content div.views-row article {
+    body.page-collections div.view-content div.views-row article, body.page-expositions div.view-content div.views-row article {
       position: absolute;
       color: #fefefe;
       z-index: 1;
-      background-image: url("../images/trame.png"); }
+      background-image: url("../images/trame.png");
+      width: 100%; }
       body.page-collections div.view-content div.views-row article h1,
       body.page-collections div.view-content div.views-row article h2,
-      body.page-collections div.view-content div.views-row article p.date {
+      body.page-collections div.view-content div.views-row article p.date, body.page-expositions div.view-content div.views-row article h1,
+      body.page-expositions div.view-content div.views-row article h2,
+      body.page-expositions div.view-content div.views-row article p.date {
         font-family: "montserrat";
         text-transform: uppercase;
         letter-spacing: 0.125em; }
-      body.page-collections div.view-content div.views-row article h1 {
+      body.page-collections div.view-content div.views-row article h1, body.page-expositions div.view-content div.views-row article h1 {
         font-size: 0.875em;
         margin-top: 3.75em;
         padding: 0; }
-      body.page-collections div.view-content div.views-row article h2 {
+      body.page-collections div.view-content div.views-row article h2, body.page-expositions div.view-content div.views-row article h2 {
         font-size: 1.5em;
         margin: 0.3125em; }
-      body.page-collections div.view-content div.views-row article p {
+      body.page-collections div.view-content div.views-row article p, body.page-expositions div.view-content div.views-row article p {
         float: left;
         display: block;
         margin-right: 1.20482%;
@@ -278,16 +363,17 @@ body.page-collections div.view-content {
         margin: 0 auto;
         float: none;
         margin-top: 1.25em; }
-        body.page-collections div.view-content div.views-row article p:last-child {
+        body.page-collections div.view-content div.views-row article p:last-child, body.page-expositions div.view-content div.views-row article p:last-child {
           margin-right: 0; }
-        body.page-collections div.view-content div.views-row article p.date {
+        body.page-collections div.view-content div.views-row article p.date, body.page-expositions div.view-content div.views-row article p.date {
           color: #a8a8a8;
           margin-top: 0; }
       body.page-collections div.view-content div.views-row article p,
-      body.page-collections div.view-content div.views-row article a {
+      body.page-collections div.view-content div.views-row article a, body.page-expositions div.view-content div.views-row article p,
+      body.page-expositions div.view-content div.views-row article a {
         font-family: 'Gentium Book Basic', serif;
         font-size: 0.875em; }
-      body.page-collections div.view-content div.views-row article a {
+      body.page-collections div.view-content div.views-row article a, body.page-expositions div.view-content div.views-row article a {
         display: inline-block;
         padding: 0.625em 1.5625em;
         background-color: white;
@@ -300,54 +386,57 @@ body.page-collections div.view-content {
       body.page-collections div.view-content div.views-row article h1,
       body.page-collections div.view-content div.views-row article h2,
       body.page-collections div.view-content div.views-row article p,
-      body.page-collections div.view-content div.views-row article a {
+      body.page-collections div.view-content div.views-row article a, body.page-expositions div.view-content div.views-row article h1,
+      body.page-expositions div.view-content div.views-row article h2,
+      body.page-expositions div.view-content div.views-row article p,
+      body.page-expositions div.view-content div.views-row article a {
         line-height: 1.6; }
-    body.page-collections div.view-content div.views-row div.field-content {
+    body.page-collections div.view-content div.views-row div.field-content, body.page-expositions div.view-content div.views-row div.field-content {
       line-height: 0;
       background-color: black; }
-      body.page-collections div.view-content div.views-row div.field-content img {
+      body.page-collections div.view-content div.views-row div.field-content img, body.page-expositions div.view-content div.views-row div.field-content img {
         opacity: .7;
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
         position: relative; }
-    body.page-collections div.view-content div.views-row:hover a {
+    body.page-collections div.view-content div.views-row:hover a, body.page-expositions div.view-content div.views-row:hover a {
       text-decoration: none;
       background-color: #a4942a;
       color: #fefefe; }
-    body.page-collections div.view-content div.views-row:hover div.field-content img {
+    body.page-collections div.view-content div.views-row:hover div.field-content img, body.page-expositions div.view-content div.views-row:hover div.field-content img {
       opacity: .2; }
-body.page-taxonomy-term-4 h1#page-title {
+body.page-taxonomy-term h1#page-title {
   display: none; }
-body.page-taxonomy-term-4 div.content {
+body.page-taxonomy-term div.content {
   *zoom: 1;
   max-width: 960px;
   margin-left: auto;
   margin-right: auto; }
-  body.page-taxonomy-term-4 div.content:before, body.page-taxonomy-term-4 div.content:after {
+  body.page-taxonomy-term div.content:before, body.page-taxonomy-term div.content:after {
     content: " ";
     display: table; }
-  body.page-taxonomy-term-4 div.content:after {
+  body.page-taxonomy-term div.content:after {
     clear: both; }
-  body.page-taxonomy-term-4 div.content div.group-header {
+  body.page-taxonomy-term div.content div.group-header {
     *zoom: 1;
     max-width: 960px;
     margin-left: auto;
     margin-right: auto; }
-    body.page-taxonomy-term-4 div.content div.group-header:before, body.page-taxonomy-term-4 div.content div.group-header:after {
+    body.page-taxonomy-term div.content div.group-header:before, body.page-taxonomy-term div.content div.group-header:after {
       content: " ";
       display: table; }
-    body.page-taxonomy-term-4 div.content div.group-header:after {
+    body.page-taxonomy-term div.content div.group-header:after {
       clear: both; }
-    body.page-taxonomy-term-4 div.content div.group-header div.head {
+    body.page-taxonomy-term div.content div.group-header div.head {
       float: left;
       display: block;
       margin-right: 1.20482%;
       width: 40.96386%;
       margin-right: 0; }
-      body.page-taxonomy-term-4 div.content div.group-header div.head:last-child {
+      body.page-taxonomy-term div.content div.group-header div.head:last-child {
         margin-right: 0; }
-      body.page-taxonomy-term-4 div.content div.group-header div.head a {
+      body.page-taxonomy-term div.content div.group-header div.head a {
         background-color: black;
         color: #fefefe;
         font-family: 'Gentium Book Basic';
@@ -356,26 +445,26 @@ body.page-taxonomy-term-4 div.content {
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out; }
-        body.page-taxonomy-term-4 div.content div.group-header div.head a:before {
+        body.page-taxonomy-term div.content div.group-header div.head a:before {
           content: "< "; }
-        body.page-taxonomy-term-4 div.content div.group-header div.head a:hover {
+        body.page-taxonomy-term div.content div.group-header div.head a:hover {
           background-color: #a4942a;
           text-decoration: none; }
-      body.page-taxonomy-term-4 div.content div.group-header div.head div.heading {
+      body.page-taxonomy-term div.content div.group-header div.head div.heading {
         background-color: black;
         color: #fefefe;
         padding: 1.25em 1.875em;
         margin-top: 0.625em; }
-        body.page-taxonomy-term-4 div.content div.group-header div.head div.heading h2,
-        body.page-taxonomy-term-4 div.content div.group-header div.head div.heading p.date,
-        body.page-taxonomy-term-4 div.content div.group-header div.head div.heading h3 {
+        body.page-taxonomy-term div.content div.group-header div.head div.heading h2,
+        body.page-taxonomy-term div.content div.group-header div.head div.heading p.date,
+        body.page-taxonomy-term div.content div.group-header div.head div.heading h3 {
           margin: 0;
           font-family: 'montserrat';
           text-transform: uppercase; }
-        body.page-taxonomy-term-4 div.content div.group-header div.head div.heading h2,
-        body.page-taxonomy-term-4 div.content div.group-header div.head div.heading p.date {
+        body.page-taxonomy-term div.content div.group-header div.head div.heading h2,
+        body.page-taxonomy-term div.content div.group-header div.head div.heading p.date {
           font-size: 0.875em; }
-        body.page-taxonomy-term-4 div.content div.group-header div.head div.heading h3 {
+        body.page-taxonomy-term div.content div.group-header div.head div.heading h3 {
           float: left;
           display: block;
           margin-right: 2.94118%;
@@ -383,17 +472,17 @@ body.page-taxonomy-term-4 div.content {
           float: none;
           font-size: 1.5em;
           font-weight: bold; }
-          body.page-taxonomy-term-4 div.content div.group-header div.head div.heading h3:last-child {
+          body.page-taxonomy-term div.content div.group-header div.head div.heading h3:last-child {
             margin-right: 0; }
-  body.page-taxonomy-term-4 div.content div.group-left {
+  body.page-taxonomy-term div.content div.group-left {
     float: left;
     display: block;
     margin-right: 1.20482%;
     width: 40.96386%;
     margin-right: 0; }
-    body.page-taxonomy-term-4 div.content div.group-left:last-child {
+    body.page-taxonomy-term div.content div.group-left:last-child {
       margin-right: 0; }
-    body.page-taxonomy-term-4 div.content div.group-left div.views-field-description {
+    body.page-taxonomy-term div.content div.group-left div.views-field-description {
       padding: 3.125em 1.875em;
       text-transform: uppercase;
       color: black;
@@ -401,36 +490,36 @@ body.page-taxonomy-term-4 div.content {
       font-size: 0.875em;
       font-weight: bold;
       margin: 3.75em 0 1.875em; }
-    body.page-taxonomy-term-4 div.content div.group-left div.infos {
+    body.page-taxonomy-term div.content div.group-left div.infos {
       padding: 1.875em;
       background-color: black;
       color: #fefefe; }
-      body.page-taxonomy-term-4 div.content div.group-left div.infos h2 {
+      body.page-taxonomy-term div.content div.group-left div.infos h2 {
         font-family: 'montserrat';
         font-weight: bold;
         font-size: 0.875em;
         text-transform: uppercase;
         margin: 0; }
-      body.page-taxonomy-term-4 div.content div.group-left div.infos h3 {
+      body.page-taxonomy-term div.content div.group-left div.infos h3 {
         font-family: 'Gentium Book: Basic';
         font-weight: bold;
         font-size: 0.875em;
         text-transform: uppercase;
         margin: 30px 0 0; }
-      body.page-taxonomy-term-4 div.content div.group-left div.infos p {
+      body.page-taxonomy-term div.content div.group-left div.infos p {
         color: #c7c7c7;
         font-family: 'Gentium Book Basic';
         font-size: 0.875em; }
-  body.page-taxonomy-term-4 div.content div.group-right {
+  body.page-taxonomy-term div.content div.group-right {
     float: left;
     display: block;
     width: 59.03614%;
     margin-right: 0;
     background-color: #fefefe;
     color: black; }
-    body.page-taxonomy-term-4 div.content div.group-right:last-child {
+    body.page-taxonomy-term div.content div.group-right:last-child {
       width: 57.83133%; }
-    body.page-taxonomy-term-4 div.content div.group-right div.views-field-field_contenu {
+    body.page-taxonomy-term div.content div.group-right div.views-field-field_contenu {
       color: rgba(0, 0, 0, 0.75);
       font-family: 'Gentium Book Basic';
       font-size: 0.875em;
@@ -574,7 +663,8 @@ body {
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
-        opacity: 1; }
+        opacity: 1;
+        z-index: 1; }
         body div#header div#main-menu a#search_btn svg,
         body div#header div#main-menu a#close_btn svg {
           fill: rgba(254, 254, 254, 0.75);
@@ -615,7 +705,7 @@ body {
             color: #fefefe;
             text-decoration: none; }
           body div#header div#main-menu ul#main-menu-links li.last {
-            padding-right: 30px; }
+            margin-right: 30px; }
   body #breadcrumb {
     height: 3.125em;
     background-color: #262626; }

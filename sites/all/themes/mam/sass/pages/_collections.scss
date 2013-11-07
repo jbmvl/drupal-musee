@@ -1,8 +1,9 @@
 // Page des Collections
 body
 {
-	//Liste des collections
-	&.page-collections
+	//Liste des collections & expositions
+	&.page-collections,
+	&.page-expositions
 	{
 		h1#page-title,
 		h2.pane-title
@@ -31,6 +32,7 @@ body
 					color: $white;
 					z-index: 1;
 					background-image: url("../images/trame.png");
+					@include fill-parent();
 
 					h1,
 					h2,
@@ -131,7 +133,7 @@ body
 	}
 	
 	//Page d'une collection
-	&.page-taxonomy-term-4
+	&.page-taxonomy-term
 	{
 		h1#page-title
 		{
