@@ -436,6 +436,46 @@ body.page-taxonomy-term-4 div.content {
       font-size: 0.875em;
       padding: 1.875em; }
 
+body.page-votre-visite h1#page-title {
+  display: none; }
+body.page-votre-visite .titre {
+  margin-top: 372px;
+  padding: 35px;
+  background: black;
+  color: white; }
+body.page-votre-visite .pane-viewmap {
+  margin-bottom: 125px; }
+  body.page-votre-visite .pane-viewmap h2 {
+    display: none; }
+  body.page-votre-visite .pane-viewmap .pane-content {
+    width: 100%;
+    height: 500px; }
+  body.page-votre-visite .pane-viewmap .gmap {
+    width: 100% !important;
+    height: 500px !important; }
+body.page-votre-visite div.panel-pane:not(.pane-viewmap) {
+  *zoom: 1;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  margin-bottom: 60px; }
+  body.page-votre-visite div.panel-pane:not(.pane-viewmap):before, body.page-votre-visite div.panel-pane:not(.pane-viewmap):after {
+    content: " ";
+    display: table; }
+  body.page-votre-visite div.panel-pane:not(.pane-viewmap):after {
+    clear: both; }
+  body.page-votre-visite div.panel-pane:not(.pane-viewmap) div.view-votre-visite-acces .views-field {
+    float: left;
+    display: block;
+    margin-right: 1.20482%;
+    width: 32.53012%;
+    height: 85px;
+    margin-right: 5px;
+    font-family: 'Gentium Book Basic', serif; }
+    body.page-votre-visite div.panel-pane:not(.pane-viewmap) div.view-votre-visite-acces .views-field:last-child {
+      margin-right: 0; }
+
 @font-face {
   font-family: 'montserrat';
   src: url("../font/montserrat-regular-webfont.eot");
@@ -632,3 +672,16 @@ body {
       body #breadcrumb div.breadcrumb a {
         line-height: 3.125em;
         color: #fefefe; }
+  body div.panel-pane h2, body div.panel-pane span.views-label {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'montserrat', sans-serif;
+    letter-spacing: .3em; }
+  body div.panel-pane h2::after {
+    content: ".";
+    font-size: 0.001px;
+    border-bottom: 1px solid black;
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    height: 23px; }

@@ -14,6 +14,7 @@
 @import "pages/_oeuvres.scss";
 @import "pages/_activites.scss";
 @import "pages/_collections.scss";
+@import "pages/_votrevisite.scss";
 
 //General styles
 //Fonts
@@ -241,6 +242,31 @@ body
 				color: $white;
 			}		
 		}
+	}
+
+
+
+
+
+	div.panel-pane
+	{
+		h2, span.views-label {
+			text-transform: uppercase;
+			font-weight: bold;
+			font-family: 'montserrat', sans-serif;
+			letter-spacing: .3em;
+		}
+
+		h2::after {
+			content: ".";
+			font-size: 0.001px;
+			border-bottom: 1px solid black;
+			display: inline-block;
+			vertical-align: top;
+			width: 200px;
+			height: 23px;
+		}
+
 	}
 
 }
