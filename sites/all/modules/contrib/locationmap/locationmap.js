@@ -1,8 +1,6 @@
 (function($){
   Drupal.behaviors.locationmap = {
-
     attach: function(context, settings) {
-
       var target_point = new google.maps.LatLng(Drupal.settings.locationmap.lat, Drupal.settings.locationmap.lng);
 
       var mapOptions = {
@@ -20,80 +18,6 @@
         map: map
       };
 
-       var styles = [
-                         {
-                           "featureType": "water",
-                           "stylers": [
-                             { "color": "#275170" }
-                           ]
-                         },{
-                           "featureType": "administrative",
-                           "elementType": "labels.text.fill",
-                           "stylers": [
-                             { "color": "#656565" }
-                           ]
-                         },{
-                           "featureType": "administrative",
-                           "elementType": "labels.text.stroke",
-                           "stylers": [
-                             { "color": "#ffffff" },
-                             { "weight": 8 }
-                           ]
-                         },{
-                           "featureType": "administrative.locality",
-                           "stylers": [
-                             { "visibility": "off" }
-                           ]
-                         },{
-                           "featureType": "landscape",
-                           "stylers": [
-                             { "color": "#eaeaea" }
-                           ]
-                         },{
-                           "featureType": "poi",
-                           "stylers": [
-                             { "visibility": "off" }
-                           ]
-                         },{
-                           "featureType": "road",
-                           "elementType": "labels.icon",
-                           "stylers": [
-                             { "visibility": "off" }
-                           ]
-                         },{
-                           "featureType": "road",
-                           "elementType": "geometry.fill",
-                           "stylers": [
-                             { "color": "#eaeaea" }
-                           ]
-                         },{
-                           "featureType": "road",
-                           "elementType": "geometry.stroke",
-                           "stylers": [
-                             { "color": "#0fab9d" }
-                           ]
-                         },{
-                           "featureType": "road",
-                           "elementType": "labels.text.fill",
-                           "stylers": [
-                             { "color": "#ffffff" }
-                           ]
-                         },{
-                           "featureType": "road",
-                           "elementType": "labels.text.stroke",
-                           "stylers": [
-                             { "color": "#31b78d" },
-                             { "weight": 6.1 }
-                           ]
-                         },{
-                           "featureType": "transit",
-                           "stylers": [
-                             { "visibility": "off" }
-                           ]
-                         }
-                      
-                        ];
- 
       var marker = new google.maps.Marker(markerOptions);
 
       var infowindow = new google.maps.InfoWindow({
