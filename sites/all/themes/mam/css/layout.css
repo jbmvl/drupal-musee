@@ -20,6 +20,7 @@ body:before {
   position: fixed;
   right: 0;
   width: 100%;
+  pointer-events: none;
   z-index: -1; }
   @media screen and (max-width: 480px) {
     body:before {
@@ -53,54 +54,54 @@ body:before {
     width: auto; } }
 
 .no-sidebars #content {
-  display: block;
   float: left;
+  display: block;
   margin-right: 1.20482%;
   width: 100%; }
   .no-sidebars #content:last-child {
     margin-right: 0; }
   @media screen and (max-width: 768px) {
     .no-sidebars #content {
-      display: block;
       float: left;
+      display: block;
       margin-right: 1.81818%;
       width: 100%; }
       .no-sidebars #content:last-child {
         margin-right: 0; } }
   @media screen and (max-width: 480px) {
     .no-sidebars #content {
-      display: block;
       float: left;
+      display: block;
       margin-right: 3.7037%;
       width: 100%; }
       .no-sidebars #content:last-child {
         margin-right: 0; } }
 .one-sidebar.sidebar-second #content {
-  display: block;
   float: left;
+  display: block;
   margin-right: 1.20482%;
   width: 74.6988%; }
   .one-sidebar.sidebar-second #content:last-child {
     margin-right: 0; }
   @media screen and (max-width: 768px) {
     .one-sidebar.sidebar-second #content {
-      display: block;
       float: left;
+      display: block;
       margin-right: 1.81818%;
       width: 74.54545%; }
       .one-sidebar.sidebar-second #content:last-child {
         margin-right: 0; } }
   @media screen and (max-width: 480px) {
     .one-sidebar.sidebar-second #content {
-      display: block;
       float: left;
+      display: block;
       margin-right: 3.7037%;
       width: 100%; }
       .one-sidebar.sidebar-second #content:last-child {
         margin-right: 0; } }
 .one-sidebar.sidebar-first #content {
-  display: block;
   float: left;
+  display: block;
   margin-right: 1.20482%;
   width: 83.13253%;
   margin-left: 16.86747%; }
@@ -108,8 +109,8 @@ body:before {
     margin-right: 0; }
   @media screen and (max-width: 768px) {
     .one-sidebar.sidebar-first #content {
-      display: block;
       float: left;
+      display: block;
       margin-right: 1.81818%;
       width: 61.81818%;
       margin-left: 25.45455%; }
@@ -117,16 +118,16 @@ body:before {
         margin-right: 0; } }
   @media screen and (max-width: 480px) {
     .one-sidebar.sidebar-first #content {
-      display: block;
       float: left;
+      display: block;
       margin-right: 3.7037%;
       width: 100%;
       margin-left: 0%; }
       .one-sidebar.sidebar-first #content:last-child {
         margin-right: 0; } }
 .two-sidebars #content {
-  display: block;
   float: left;
+  display: block;
   margin-right: 1.20482%;
   width: 57.83133%;
   margin-left: 16.86747%; }
@@ -134,8 +135,8 @@ body:before {
     margin-right: 0; }
   @media screen and (max-width: 768px) {
     .two-sidebars #content {
-      display: block;
       float: left;
+      display: block;
       margin-right: 1.81818%;
       width: 49.09091%;
       margin-left: 25.45455%; }
@@ -143,8 +144,8 @@ body:before {
         margin-right: 0; } }
   @media screen and (max-width: 480px) {
     .two-sidebars #content {
-      display: block;
       float: left;
+      display: block;
       margin-right: 3.7037%;
       width: 100%;
       margin-left: 0%; }
@@ -152,8 +153,8 @@ body:before {
         margin-right: 0; } }
 
 #sidebar-first {
-  display: block;
   float: left;
+  display: block;
   margin-right: 1.20482%;
   width: 15.66265%;
   margin-left: -75.90361%; }
@@ -163,8 +164,8 @@ body:before {
     margin-left: -101.20482%; }
   @media screen and (max-width: 768px) {
     #sidebar-first {
-      display: block;
       float: left;
+      display: block;
       margin-right: 1.81818%;
       width: 23.63636%;
       margin-left: -76.36364%; }
@@ -174,8 +175,8 @@ body:before {
         margin-left: -89.09091%; } }
   @media screen and (max-width: 480px) {
     #sidebar-first {
-      display: block;
       float: left;
+      display: block;
       margin-right: 3.7037%;
       width: 100%;
       margin-left: 0%; }
@@ -185,8 +186,8 @@ body:before {
         margin-left: 0%; } }
 
 #sidebar-second {
-  display: block;
   float: left;
+  display: block;
   margin-right: 1.20482%;
   width: 24.09639%;
   margin-left: 0%; }
@@ -194,8 +195,8 @@ body:before {
     margin-right: 0; }
   @media screen and (max-width: 768px) {
     #sidebar-second {
-      display: block;
       float: left;
+      display: block;
       margin-right: 1.81818%;
       width: 23.63636%;
       margin-left: 0%; }
@@ -203,8 +204,8 @@ body:before {
         margin-right: 0; } }
   @media screen and (max-width: 480px) {
     #sidebar-second {
-      display: block;
       float: left;
+      display: block;
       margin-right: 3.7037%;
       width: 100%;
       margin-left: 0%; }

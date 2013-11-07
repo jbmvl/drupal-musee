@@ -1,6 +1,7 @@
 // Page des Collections
 body
 {
+	//Liste des collections
 	&.page-collections
 	{
 		h1#page-title,
@@ -126,6 +127,148 @@ body
 				}				
 			}
 
+		}
+	}
+	
+	//Page d'une collection
+	&.page-taxonomy-term-4
+	{
+		h1#page-title
+		{
+			display: none;
+		}
+		div.content
+		{	
+			@include outer-container();
+
+			div.group-header
+			{
+				@include outer-container();
+
+				div.head
+				{
+					@include span-columns(5);
+					@include omega();
+
+					a
+					{
+						background-color: black;
+						color: $white;
+						font-family: 'Gentium Book Basic';
+						font-size: em(14);
+						padding: em(10) em(20);
+						@include transition(all $speed ease-in-out);
+
+						&:before
+						{
+							content: "< "
+						}
+
+						&:hover
+						{
+							background-color: $gold;
+							text-decoration: none;
+						}
+					}
+					
+					div.heading
+					{
+						background-color: black;
+						color: $white;
+						@include pad(em(20) em(30)); 
+						margin-top: em(10);
+
+						h2,
+						p.date,
+						h3
+						{
+							margin: 0;
+							font-family: 'montserrat';
+							text-transform: uppercase;
+						}
+
+						h2,
+						p.date					
+						{
+							font-size: em(14);
+						}
+
+						h3
+						{
+							@include span-columns(3 of 5);
+							float: none;
+							font-size: em(24);
+							font-weight: bold;
+						}	
+					}
+
+				}
+			}
+
+			div.group-left
+			{
+				@include span-columns(5);
+				@include omega();
+
+				div.views-field-description
+				{
+					@include pad(em(50) em(30));
+					text-transform: uppercase;
+					color: black;
+					background-color: $white;
+					font-size: em(14);
+					font-weight: bold;
+					margin: em(60) 0 em(30);
+				}
+
+				div.infos
+				{
+					@include pad(em(30));
+					background-color: black;
+					color: $white;
+
+					h2
+					{
+						font-family: 'montserrat';
+						font-weight: bold;
+						font-size: em(14);
+						text-transform: uppercase;
+						margin: 0;
+					}
+
+					h3
+					{
+						font-family: 'Gentium Book: Basic';
+						font-weight: bold;
+						font-size: em(14);
+						text-transform: uppercase;
+						margin: 30px 0 0;
+					}
+
+					p
+					{
+						color: $light-gray;
+						font-family: 'Gentium Book Basic';
+						font-size: em(14);
+					}
+				}
+			}
+
+			div.group-right
+			{
+				@include span-columns(7, block-collapse);
+				@include omega();
+				background-color: $white;
+				color: black;
+
+				div.views-field-field_contenu
+				{
+					color: transparentize(black, 0.25);
+					font-family: 'Gentium Book Basic';
+					font-size: em(14);
+					@include pad(em(30));
+				}
+			}
 		}
 	}
 }
