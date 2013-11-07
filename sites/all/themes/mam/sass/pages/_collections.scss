@@ -85,6 +85,14 @@ body
 						@include transition (all $speed ease-in-out);
 						margin-top: em(30);
 					}
+
+					h1,
+					h2,
+					p,
+					a
+					{
+						line-height: 1.6;
+					}
 				}
 
 				div.field-content
@@ -95,6 +103,7 @@ body
 					{
 						opacity: .7;
 						@include transition (all $speed ease-in-out);
+						position: relative;
 					}
 				}
 

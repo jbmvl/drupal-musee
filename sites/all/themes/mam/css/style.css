@@ -297,6 +297,11 @@ body.page-collections div.view-content {
         -o-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
         margin-top: 1.875em; }
+      body.page-collections div.view-content div.views-row article h1,
+      body.page-collections div.view-content div.views-row article h2,
+      body.page-collections div.view-content div.views-row article p,
+      body.page-collections div.view-content div.views-row article a {
+        line-height: 1.6; }
     body.page-collections div.view-content div.views-row div.field-content {
       line-height: 0;
       background-color: black; }
@@ -306,7 +311,8 @@ body.page-collections div.view-content {
         -moz-transition: all 0.3s ease-in-out;
         -ms-transition: all 0.3s ease-in-out;
         -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out; }
+        transition: all 0.3s ease-in-out;
+        position: relative; }
     body.page-collections div.view-content div.views-row:hover a {
       text-decoration: none;
       background-color: #a4942a;
