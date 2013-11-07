@@ -1,1 +1,103 @@
 // Page d'accueil
+body
+{
+	&.page-accueil
+	{
+		h1#page-title
+		{
+			display: none;
+		}
+
+		div#highlighted
+		{
+			@include outer-container();
+			
+			h2.pane-title
+			{
+				display: none;
+			}
+
+			article
+			{
+				@include span-columns(6);
+				@include pad(em(30));
+				float: none;
+				background-color: black;
+				color: $white;
+
+				h1,
+				p.date,
+				h2
+				{
+					font-family: "montserrat";
+					letter-spacing: em(2);
+				}
+
+				h1
+				{
+					font-size: em(24);
+					margin: 0;
+					padding: 0;
+					text-transform: uppercase;
+					font-weight: bold;
+				}
+
+				h2
+				{
+					font-family: "montserrat";
+					font-size: em(16);
+					margin: 0;
+				}
+
+				p.date
+				{
+					font-family: "montserrat";
+					font-size: em(14);
+					margin: 0;
+					color: $light-gray;
+				}
+
+				p,
+				a
+				{
+					font-family: 'Gentium Book Basic';
+				}
+
+				a
+				{
+					font-weight: bold;
+					color: $white;
+				}
+			}		
+
+		}
+
+		div.teaser-collections
+		{
+			@include outer-container();
+
+			div.views-row-1
+			{	
+				@include span-columns(7 of 12, block-collapse);
+				float: none;
+				article
+				{
+					background-color: $white;
+					overflow: hidden;
+
+					aside
+					{
+						@include span-columns(4 of 7, block-collapse);
+						line-height: 0;
+
+						img
+						{
+							@include fill-parent();
+						}
+					}
+				}				
+			}				
+
+		}
+	}
+}
