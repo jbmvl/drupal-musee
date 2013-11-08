@@ -1023,7 +1023,7 @@ body {
         color: #fefefe; }
   body #footer-wrapper {
     background: #262626;
-    color: white; }
+    color: #fefefe; }
     body #footer-wrapper #footer-columns {
       *zoom: 1;
       max-width: 960px;
@@ -1051,27 +1051,29 @@ body {
       display: block;
       margin-right: 1.20482%;
       width: 49.39759%;
-      background: black;
+      background: #1c1c1c;
       padding: 20px; }
       body #footer-wrapper .region-footer-secondcolumn:last-child {
         margin-right: 0; }
       body #footer-wrapper .region-footer-secondcolumn h2 {
-        margin-top: 0;
-        text-transform: uppercase;
-        font-size: 1.1em;
-        font-weight: 300;
-        font-family: montserrat, sans-serif;
-        letter-spacing: .15em;
-        width: 55%;
-        color: #DDD; }
+        display: none; }
       body #footer-wrapper .region-footer-secondcolumn p {
         font-family: 'Gentium Book Basic', serif;
-        color: #AAA;
+        color: #a8a8a8;
         margin-bottom: 40px; }
+        body #footer-wrapper .region-footer-secondcolumn p:first-of-type {
+          margin-top: 0;
+          text-transform: uppercase;
+          font-size: 1.1em;
+          font-weight: 300;
+          font-family: montserrat, sans-serif;
+          letter-spacing: .15em;
+          width: 55%;
+          color: #fefefe; }
         body #footer-wrapper .region-footer-secondcolumn p a {
           display: block;
           margin-bottom: 20px;
-          color: white;
+          color: #fefefe;
           font-family: montserrat, sans-serif; }
     body #footer-wrapper a, body #footer-wrapper a:hover, body #footer-wrapper a:active {
       color: inherit; }
