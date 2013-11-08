@@ -246,4 +246,56 @@ body
 	}
 
 
+	#footer-wrapper {
+		background: $dark_gray;
+		color: white;
+
+		#footer-columns { @include outer-container; }
+
+		.region-footer-firstcolumn {
+			@include span-columns(6);
+			h2 { display: none; }
+
+			ul {
+				li {
+					list-style: none;
+					margin-bottom: 20px;
+				}
+
+			}
+		}
+		.region-footer-secondcolumn {
+			@include span-columns(6);
+			background: black;
+			padding: 20px;
+
+			h2 {
+				margin-top: 0;
+				text-transform: uppercase;
+				font-size: 1.1em;
+				font-weight: 300;
+				font-family: montserrat, sans-serif;
+				letter-spacing: .15em;
+				width: 55%;
+				color: #DDD;
+			}
+
+			p {
+				font-family: 'Gentium Book Basic', serif;
+				color: #AAA;
+				margin-bottom: 40px;
+
+				a {
+					display: block;
+					margin-bottom: 20px;
+					color: white;
+					font-family: montserrat, sans-serif;
+				}
+			}
+		}
+
+		a, a:hover, a:active {color: inherit;}
+	}
+
+
 }
