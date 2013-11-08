@@ -62,7 +62,22 @@ body
 		margin-right: auto;
 		width: $max-width;
 		position: relative;
-	}	
+	}
+
+	img
+	{	
+		position: relative;
+
+		&:before
+		{
+			content: "";
+			background-image: url("../images/trame.png");
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			z-index: 1;
+		}
+	}
 	
 	div#header
 	{
@@ -272,12 +287,6 @@ body
 
 			h2
 			{
-				display: none;
-			}
-
-			p {
-				&:first-of-type
-				{
 					margin-top: 0;
 					text-transform: uppercase;
 					font-size: 1.1em;
@@ -286,7 +295,9 @@ body
 					letter-spacing: .15em;
 					width: 55%;
 					color: $white;
-				}
+			}
+
+			p {
 
 				font-family: 'Gentium Book Basic', serif;
 				color: $gray;

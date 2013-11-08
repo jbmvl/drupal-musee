@@ -70,6 +70,12 @@ body
  
 		}
 
-
+		.view-id-viewmap img{
+			filter: saturate(8) grayscale(1);
+			-webkit-filter: saturate(8) grayscale(1);
+			-moz-filter: saturate(8) grayscale(1);
+			-o-filter: saturate(8) grayscale(1);
+			-ms-filter: saturate(8) grayscale(1);
+		}
 	}
 }
