@@ -482,6 +482,141 @@ body
 			}
 		}
 
+		div.pane-infos-pratiques-home
+		{
+			background-image: url("../images/Bkg_two.jpg");
+			background-size: cover;
+			@include pad(em(80) 0);
+
+			h2.pane-title
+			{
+				@include outer-container();
+				color: $white;
+				font-family: 'montserrat';
+				font-size: em(24);
+				margin: 0 auto;
+				text-transform: uppercase;
+				letter-spacing: em(2);
+			}
+			div.pane-content
+			{
+				@include outer-container();
+				
+				div.group-header
+				{
+					margin: em(50) auto;
+					text-align: center;
+					color: transparentize($white, .5);
+					font-family: 'montserrat';
+					letter-spacing: em(2);
+					
+					div.views-field-field_ih_nom_du_musee
+					{
+						font-size: em(18);
+						text-transform: uppercase;
+						font-weight: bold;
+					}
+
+					div.views-field-field_ih_adresse
+					{
+						font-size: em(13);
+					}
+				}
+
+				div.group-left,
+				div.group-middle,
+				div.group-right
+				{
+					@include span-columns(4);
+					text-align: center;
+
+					div.views-field-field_ih_acces,
+					div.views-field-title
+					{
+						div.field-label
+						{
+							font-size: em(16);
+							color: transparentize($white, .25);
+							font-family: 'montserrat';
+							letter-spacing: em(2);
+							text-transform: uppercase;
+							border-bottom: 1px solid transparentize($white, .5);
+							padding-bottom: em(10);
+						}
+
+						span
+						{
+							display: none;
+						}
+					}
+					div.views-field-field_ih_bus,
+					div.views-field-field_ih_metro,
+					div.views-field-field_ih_rer,
+					div.views-field-field_ih_velib,
+					div.views-field-field_ih_autolib,
+					div.views-field-field_ih_semaine,
+					div.views-field-field_ih_nocturne,
+					div.views-field-field_ih_fermeture,
+					div.views-field-field_ih_plein_tarif,
+					div.views-field-field_ih_demi_tarif,
+					div.views-field-field_ih_gratuite,
+					div.views-field-field_ih_collections_permanentes,
+					div.views-field-field_ih_expositions_temporaires
+					{
+						div.field-label
+						{
+							padding-top: em(30);
+							color: transparentize($white, .25);
+							font-size: em(16);
+							font-weight: bold;
+							font-family: 'Gentium Book Basic';
+						}
+
+						span
+						{
+							color: transparentize($white, .5);
+							font-size: em(16);	
+							font-family: 'Gentium Book Basic';
+						}
+					}
+					div.views-field-field_ih_collections_permanentes
+					{
+						div.field-label
+						{
+							text-transform: uppercase;
+						}
+					}
+					div.views-field-field_ih_expositions_temporaires
+					{
+						span
+						{
+							text-transform: uppercase;
+							color: transparentize($white, .25);
+							font-weight: bold;
+							padding-top: em(30);
+							display: block;
+						}
+					}
+					div.views-field-field_ih_horaires
+					{
+						font-size: em(16);
+						color: transparentize($white, .25);
+						font-family: 'montserrat';
+						letter-spacing: em(2);
+						text-transform: uppercase;
+						border-bottom: 1px solid transparentize($white, .5);
+						padding-bottom: em(10);
+					}
+				}
+
+				div.group-right
+				{
+					@include omega();
+				}
+			}
+
+		}
+
 		div.pane-activites
 		{
 			@include outer-container();

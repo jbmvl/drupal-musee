@@ -21,6 +21,11 @@ body
 				position: relative;
 				margin: em(5) 0;
 
+				&:last-of-type
+				{
+					margin-bottom: em(100);
+				}
+
 				&.views-row-first
 				{
 					margin-top: em(50);

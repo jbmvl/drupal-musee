@@ -546,6 +546,190 @@ body.page-accueil div.teaser-collections {
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out; }
+body.page-accueil div.pane-infos-pratiques-home {
+  background-image: url("../images/Bkg_two.jpg");
+  background-size: cover;
+  padding: 5em 0; }
+  body.page-accueil div.pane-infos-pratiques-home h2.pane-title {
+    *zoom: 1;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fefefe;
+    font-family: 'montserrat';
+    font-size: 1.5em;
+    margin: 0 auto;
+    text-transform: uppercase;
+    letter-spacing: 0.125em; }
+    body.page-accueil div.pane-infos-pratiques-home h2.pane-title:before, body.page-accueil div.pane-infos-pratiques-home h2.pane-title:after {
+      content: " ";
+      display: table; }
+    body.page-accueil div.pane-infos-pratiques-home h2.pane-title:after {
+      clear: both; }
+  body.page-accueil div.pane-infos-pratiques-home div.pane-content {
+    *zoom: 1;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto; }
+    body.page-accueil div.pane-infos-pratiques-home div.pane-content:before, body.page-accueil div.pane-infos-pratiques-home div.pane-content:after {
+      content: " ";
+      display: table; }
+    body.page-accueil div.pane-infos-pratiques-home div.pane-content:after {
+      clear: both; }
+    body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-header {
+      margin: 3.125em auto;
+      text-align: center;
+      color: rgba(254, 254, 254, 0.5);
+      font-family: 'montserrat';
+      letter-spacing: 0.125em; }
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-header div.views-field-field_ih_nom_du_musee {
+        font-size: 1.125em;
+        text-transform: uppercase;
+        font-weight: bold; }
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-header div.views-field-field_ih_adresse {
+        font-size: 0.8125em; }
+    body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left,
+    body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle,
+    body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right {
+      float: left;
+      display: block;
+      margin-right: 1.20482%;
+      width: 32.53012%;
+      text-align: center; }
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left:last-child,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle:last-child,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right:last-child {
+        margin-right: 0; }
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-field_ih_acces div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-title div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-field_ih_acces div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-title div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-field_ih_acces div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-title div.field-label {
+        font-size: 1em;
+        color: rgba(254, 254, 254, 0.75);
+        font-family: 'montserrat';
+        letter-spacing: 0.125em;
+        text-transform: uppercase;
+        border-bottom: 1px solid rgba(254, 254, 254, 0.5);
+        padding-bottom: 0.625em; }
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-field_ih_acces span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-title span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-field_ih_acces span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-title span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-field_ih_acces span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-title span {
+        display: none; }
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-field_ih_bus div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-field_ih_metro div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-field_ih_rer div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-field_ih_velib div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-field_ih_autolib div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-field_ih_semaine div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-field_ih_nocturne div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-field_ih_fermeture div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-field_ih_plein_tarif div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-field_ih_demi_tarif div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-field_ih_gratuite div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-field_ih_collections_permanentes div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-field_ih_expositions_temporaires div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-field_ih_bus div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-field_ih_metro div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-field_ih_rer div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-field_ih_velib div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-field_ih_autolib div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-field_ih_semaine div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-field_ih_nocturne div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-field_ih_fermeture div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-field_ih_plein_tarif div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-field_ih_demi_tarif div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-field_ih_gratuite div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-field_ih_collections_permanentes div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-field_ih_expositions_temporaires div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-field_ih_bus div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-field_ih_metro div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-field_ih_rer div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-field_ih_velib div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-field_ih_autolib div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-field_ih_semaine div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-field_ih_nocturne div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-field_ih_fermeture div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-field_ih_plein_tarif div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-field_ih_demi_tarif div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-field_ih_gratuite div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-field_ih_collections_permanentes div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-field_ih_expositions_temporaires div.field-label {
+        padding-top: 1.875em;
+        color: rgba(254, 254, 254, 0.75);
+        font-size: 1em;
+        font-weight: bold;
+        font-family: 'Gentium Book Basic'; }
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-field_ih_bus span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-field_ih_metro span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-field_ih_rer span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-field_ih_velib span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-field_ih_autolib span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-field_ih_semaine span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-field_ih_nocturne span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-field_ih_fermeture span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-field_ih_plein_tarif span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-field_ih_demi_tarif span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-field_ih_gratuite span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-field_ih_collections_permanentes span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-field_ih_expositions_temporaires span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-field_ih_bus span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-field_ih_metro span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-field_ih_rer span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-field_ih_velib span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-field_ih_autolib span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-field_ih_semaine span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-field_ih_nocturne span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-field_ih_fermeture span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-field_ih_plein_tarif span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-field_ih_demi_tarif span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-field_ih_gratuite span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-field_ih_collections_permanentes span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-field_ih_expositions_temporaires span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-field_ih_bus span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-field_ih_metro span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-field_ih_rer span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-field_ih_velib span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-field_ih_autolib span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-field_ih_semaine span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-field_ih_nocturne span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-field_ih_fermeture span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-field_ih_plein_tarif span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-field_ih_demi_tarif span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-field_ih_gratuite span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-field_ih_collections_permanentes span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-field_ih_expositions_temporaires span {
+        color: rgba(254, 254, 254, 0.5);
+        font-size: 1em;
+        font-family: 'Gentium Book Basic'; }
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-field_ih_collections_permanentes div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-field_ih_collections_permanentes div.field-label,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-field_ih_collections_permanentes div.field-label {
+        text-transform: uppercase; }
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-field_ih_expositions_temporaires span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-field_ih_expositions_temporaires span,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-field_ih_expositions_temporaires span {
+        text-transform: uppercase;
+        color: rgba(254, 254, 254, 0.75);
+        font-weight: bold;
+        padding-top: 1.875em;
+        display: block; }
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-left div.views-field-field_ih_horaires,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-middle div.views-field-field_ih_horaires,
+      body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right div.views-field-field_ih_horaires {
+        font-size: 1em;
+        color: rgba(254, 254, 254, 0.75);
+        font-family: 'montserrat';
+        letter-spacing: 0.125em;
+        text-transform: uppercase;
+        border-bottom: 1px solid rgba(254, 254, 254, 0.5);
+        padding-bottom: 0.625em; }
+    body.page-accueil div.pane-infos-pratiques-home div.pane-content div.group-right {
+      margin-right: 0; }
 body.page-accueil div.pane-activites {
   *zoom: 1;
   max-width: 960px;
@@ -668,6 +852,8 @@ body.page-collections div.view-content, body.page-expositions div.view-content {
     text-align: center;
     position: relative;
     margin: 0.3125em 0; }
+    body.page-collections div.view-content div.views-row:last-of-type, body.page-expositions div.view-content div.views-row:last-of-type {
+      margin-bottom: 6.25em; }
     body.page-collections div.view-content div.views-row.views-row-first, body.page-expositions div.view-content div.views-row.views-row-first {
       margin-top: 3.125em; }
     body.page-collections div.view-content div.views-row article, body.page-expositions div.view-content div.views-row article {
