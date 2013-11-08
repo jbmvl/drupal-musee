@@ -86,12 +86,54 @@ body
 		div.teaser-expositions
 		{
 			@include outer-container();
+			@include pad (em(70) 0 em(110));
 
 			div.view-content
 			{
 				overflow: hidden;
 			}
-			
+
+			h2.pane-title
+			{
+				@include outer-container();
+				font-family: 'montserrat';
+				font-weight: bold;
+				text-transform: uppercase;
+				letter-spacing: em(2);
+			}
+
+			div.more-link
+			{
+				@include outer-container();
+				a
+				{
+					@include span-columns(6);
+					@include shift(6);
+					margin-top: -41%;
+					position: relative;
+					border-bottom: 1px solid black;
+					@include transition(all $speed ease-in-out);
+
+					span
+					{
+						background-color: black;
+						@include pad(em(10) em(20));
+						color: white;
+						font-family: 'Gentium Book Basic';
+						display: inline-block;
+						@include transition(all $speed ease-in-out);
+					}
+
+					&:hover
+					{
+						border-bottom: 1px solid $gold;
+						span
+						{
+							background-color: $gold;
+						}
+					}
+				}
+			}
 
 			div
 			{
@@ -238,6 +280,7 @@ body
 							width: 50%;
 							@include omega();
 							line-height: 0;
+							float: left;
 
 							img
 							{
@@ -331,7 +374,7 @@ body
 					position: relative;
 					border-bottom: 1px solid black;
 					@include transition(all $speed ease-in-out);
-					
+
 					span
 					{
 						background-color: black;

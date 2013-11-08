@@ -298,7 +298,8 @@ body.page-accueil div.teaser-expositions {
   *zoom: 1;
   max-width: 960px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding: 4.375em 0 6.875em; }
   body.page-accueil div.teaser-expositions:before, body.page-accueil div.teaser-expositions:after {
     content: " ";
     display: table; }
@@ -306,6 +307,57 @@ body.page-accueil div.teaser-expositions {
     clear: both; }
   body.page-accueil div.teaser-expositions div.view-content {
     overflow: hidden; }
+  body.page-accueil div.teaser-expositions h2.pane-title {
+    *zoom: 1;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'montserrat';
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.125em; }
+    body.page-accueil div.teaser-expositions h2.pane-title:before, body.page-accueil div.teaser-expositions h2.pane-title:after {
+      content: " ";
+      display: table; }
+    body.page-accueil div.teaser-expositions h2.pane-title:after {
+      clear: both; }
+  body.page-accueil div.teaser-expositions div.more-link {
+    *zoom: 1;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto; }
+    body.page-accueil div.teaser-expositions div.more-link:before, body.page-accueil div.teaser-expositions div.more-link:after {
+      content: " ";
+      display: table; }
+    body.page-accueil div.teaser-expositions div.more-link:after {
+      clear: both; }
+    body.page-accueil div.teaser-expositions div.more-link a {
+      float: left;
+      display: block;
+      margin-right: 1.20482%;
+      width: 49.39759%;
+      margin-left: 50.60241%;
+      margin-top: -41%;
+      position: relative;
+      border-bottom: 1px solid black;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+      body.page-accueil div.teaser-expositions div.more-link a:last-child {
+        margin-right: 0; }
+      body.page-accueil div.teaser-expositions div.more-link a span {
+        background-color: black;
+        padding: 0.625em 1.25em;
+        color: white;
+        font-family: 'Gentium Book Basic';
+        display: inline-block;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+      body.page-accueil div.teaser-expositions div.more-link a:hover {
+        border-bottom: 1px solid #a4942a; }
+        body.page-accueil div.teaser-expositions div.more-link a:hover span {
+          background-color: #a4942a; }
   body.page-accueil div.teaser-expositions div.views-row-1 {
     float: left;
     display: block;
@@ -417,7 +469,8 @@ body.page-accueil div.teaser-expositions {
       body.page-accueil div.teaser-expositions div.views-row-2 article aside, body.page-accueil div.teaser-expositions div.views-row-3 article aside {
         width: 50%;
         margin-right: 0;
-        line-height: 0; }
+        line-height: 0;
+        float: left; }
         body.page-accueil div.teaser-expositions div.views-row-2 article aside img, body.page-accueil div.teaser-expositions div.views-row-3 article aside img {
           width: 100%;
           height: auto; }
