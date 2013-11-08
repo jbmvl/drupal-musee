@@ -481,5 +481,84 @@ body
 				}
 			}
 		}
+
+		div.pane-activites
+		{
+			@include outer-container();
+			margin: em(70) auto em(140);
+
+			h2.pane-title
+			{
+				font-family: 'montserrat';
+				font-weight: bold;
+				text-transform: uppercase;
+				letter-spacing: em(2);
+			}
+
+			div.views-row
+			{
+				width: 48%;
+				float: left;
+				background-color: $white;
+				margin: em(20) 0;
+
+				&.views-row-odd
+				{
+					margin-right: 2%;
+				}
+
+				&.views-row-even
+				{
+					margin-left: 2%;
+				}
+
+				div.views-field-field-illustration-activite
+				{
+					img
+					{
+						width: 100%;
+						height: auto;
+					}					
+				}
+
+				div.views-field-title
+				{
+					text-transform: uppercase;
+					font-family: 'montserrat';
+					font-size: em(18);
+					font-weight: bold;
+					padding: em(20);
+				}
+
+				div.views-field-field-accroche-activite
+				{
+					font-family: 'Gentium Book Basic';
+					font-style: italic;
+					font-size: em(14);
+					padding: 0 em(20);
+				}
+
+				div.views-field-field-description-courte
+				{
+					font-family: 'Gentium Book Basic';
+					font-size: em(14);
+					color: $gray;
+					padding: em(20);
+				}
+
+				div.views-field-title-1
+				{
+					padding: 0 em(20) em(20);
+
+					a
+					{
+						color: black;
+						font-family: 'Gentium Book Basic';
+						font-weight: bold;
+					}
+				}
+
+			}
+		}
 	}
 }

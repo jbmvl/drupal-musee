@@ -618,6 +618,109 @@ body.page-accueil div.teaser-collections {
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out; }
+body.page-accueil div.pane-activites {
+  *zoom: 1;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 4.375em auto 8.75em; }
+  body.page-accueil div.pane-activites:before, body.page-accueil div.pane-activites:after {
+    content: " ";
+    display: table; }
+  body.page-accueil div.pane-activites:after {
+    clear: both; }
+  body.page-accueil div.pane-activites h2.pane-title {
+    font-family: 'montserrat';
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.125em; }
+  body.page-accueil div.pane-activites div.views-row {
+    width: 48%;
+    float: left;
+    background-color: #fefefe;
+    margin: 1.25em 0; }
+    body.page-accueil div.pane-activites div.views-row.views-row-odd {
+      margin-right: 2%; }
+    body.page-accueil div.pane-activites div.views-row.views-row-even {
+      margin-left: 2%; }
+    body.page-accueil div.pane-activites div.views-row div.views-field-field-illustration-activite img {
+      width: 100%;
+      height: auto; }
+    body.page-accueil div.pane-activites div.views-row div.views-field-title {
+      text-transform: uppercase;
+      font-family: 'montserrat';
+      font-size: 1.125em;
+      font-weight: bold;
+      padding: 1.25em; }
+    body.page-accueil div.pane-activites div.views-row div.views-field-field-accroche-activite {
+      font-family: 'Gentium Book Basic';
+      font-style: italic;
+      font-size: 0.875em;
+      padding: 0 1.25em; }
+    body.page-accueil div.pane-activites div.views-row div.views-field-field-description-courte {
+      font-family: 'Gentium Book Basic';
+      font-size: 0.875em;
+      color: #a8a8a8;
+      padding: 1.25em; }
+    body.page-accueil div.pane-activites div.views-row div.views-field-title-1 {
+      padding: 0 1.25em 1.25em; }
+      body.page-accueil div.pane-activites div.views-row div.views-field-title-1 a {
+        color: black;
+        font-family: 'Gentium Book Basic';
+        font-weight: bold; }
+
+body.page-activites .panels-flexible-region-4-center {
+  width: 100%; }
+body.page-activites div.pane-activites {
+  *zoom: 1;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto; }
+  body.page-activites div.pane-activites:before, body.page-activites div.pane-activites:after {
+    content: " ";
+    display: table; }
+  body.page-activites div.pane-activites:after {
+    clear: both; }
+  body.page-activites div.pane-activites h2.pane-title {
+    font-family: 'montserrat';
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.125em; }
+  body.page-activites div.pane-activites div.views-row {
+    width: 48%;
+    float: left;
+    background-color: #fefefe;
+    margin: 1.25em 0; }
+    body.page-activites div.pane-activites div.views-row.views-row-odd {
+      margin-right: 2%; }
+    body.page-activites div.pane-activites div.views-row.views-row-even {
+      margin-left: 2%; }
+    body.page-activites div.pane-activites div.views-row div.views-field-field-illustration-activite img {
+      width: 100%;
+      height: auto; }
+    body.page-activites div.pane-activites div.views-row div.views-field-title {
+      text-transform: uppercase;
+      font-family: 'montserrat';
+      font-size: 1.125em;
+      font-weight: bold;
+      padding: 1.25em; }
+    body.page-activites div.pane-activites div.views-row div.views-field-field-accroche-activite {
+      font-family: 'Gentium Book Basic';
+      font-style: italic;
+      font-size: 0.875em;
+      padding: 0 1.25em; }
+    body.page-activites div.pane-activites div.views-row div.views-field-field-description-courte {
+      font-family: 'Gentium Book Basic';
+      font-size: 0.875em;
+      color: #a8a8a8;
+      padding: 1.25em; }
+    body.page-activites div.pane-activites div.views-row div.views-field-title-1 {
+      padding: 0 1.25em 1.25em; }
+      body.page-activites div.pane-activites div.views-row div.views-field-title-1 a {
+        color: black;
+        font-family: 'Gentium Book Basic';
+        font-weight: bold; }
 
 body.page-collections h1#page-title,
 body.page-collections h2.pane-title, body.page-expositions h1#page-title,
