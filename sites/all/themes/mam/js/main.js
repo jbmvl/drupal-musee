@@ -27,6 +27,21 @@
 			return false;
 		});
 
+		$jq(".text-size a").on("click", function(){
+			if($jq(this).hasClass("reduce-size"))
+			{
+				$jq("body").css("font-size","-=1");
+			}
+			if($jq(this).hasClass("enhance-size"))
+			{
+				$jq("body").css("font-size","+=1");
+			}
+		});
+
 	});
+
+	
+
+
 
 })(jQuery);

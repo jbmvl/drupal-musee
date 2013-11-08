@@ -54,6 +54,7 @@ html
 body
 {
 	background-color: $body_bgc;
+	font-size: .8em;
 	
 	.container
 	{
@@ -232,16 +233,29 @@ body
 		height: em(50);
 		background-color: $dark_gray;
 
-		div.breadcrumb
+		&>div
 		{
 
 			@include outer-container;
+			position: relative;
 
 			a
 			{
 				line-height: em(50);
 				color: $white;
-			}		
+			}
+
+			div.text-size
+			{
+				position: absolute;
+				right: 0;
+				top: 0;
+
+				a.reduce-size
+				{
+					font-size: 90%;
+				}
+			}
 		}
 	}
 

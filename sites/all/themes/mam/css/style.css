@@ -1020,7 +1020,8 @@ html {
   backface-visibility: hidden; }
 
 body {
-  background-color: #f1f2f2; }
+  background-color: #f1f2f2;
+  font-size: .8em; }
   body .container {
     *zoom: 1;
     max-width: 960px;
@@ -1178,19 +1179,26 @@ body {
   body #breadcrumb {
     height: 3.125em;
     background-color: #262626; }
-    body #breadcrumb div.breadcrumb {
+    body #breadcrumb > div {
       *zoom: 1;
       max-width: 960px;
       margin-left: auto;
-      margin-right: auto; }
-      body #breadcrumb div.breadcrumb:before, body #breadcrumb div.breadcrumb:after {
+      margin-right: auto;
+      position: relative; }
+      body #breadcrumb > div:before, body #breadcrumb > div:after {
         content: " ";
         display: table; }
-      body #breadcrumb div.breadcrumb:after {
+      body #breadcrumb > div:after {
         clear: both; }
-      body #breadcrumb div.breadcrumb a {
+      body #breadcrumb > div a {
         line-height: 3.125em;
         color: #fefefe; }
+      body #breadcrumb > div div.text-size {
+        position: absolute;
+        right: 0;
+        top: 0; }
+        body #breadcrumb > div div.text-size a.reduce-size {
+          font-size: 90%; }
   body #footer-wrapper {
     background: #262626;
     color: #fefefe; }

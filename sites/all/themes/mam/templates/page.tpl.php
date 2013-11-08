@@ -176,7 +176,15 @@
   <div id="main-wrapper" class="clearfix"><div id="main" class="clearfix">
 
     <?php if ($breadcrumb): ?>
-      <div id="breadcrumb"><?php print $breadcrumb; ?></div>
+      <div id="breadcrumb">
+        <div>
+          <?php print $breadcrumb; ?>
+          <div class="text-size">
+            <a href="#" alt="Réduire la taille du texte" class="reduce-size">A-</a>
+            <a href="#" alt="Aggrandir la taille du texte" class="enhance-size">A+</a>
+          </div>          
+        </div>
+      </div>
     <?php endif; ?>
 
     <?php if ($page['sidebar_first']): ?>
