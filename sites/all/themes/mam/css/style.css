@@ -253,11 +253,18 @@ body.page-accueil div#highlighted {
     margin-right: 1.20482%;
     width: 49.39759%;
     padding: 1.875em;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     float: none;
     background-color: black;
     color: #fefefe; }
     body.page-accueil div#highlighted article:last-child {
       margin-right: 0; }
+    body.page-accueil div#highlighted article:hover {
+      background-color: #a4942a; }
+      body.page-accueil div#highlighted article:hover p.date {
+        color: rgba(254, 254, 254, 0.75); }
     body.page-accueil div#highlighted article h1,
     body.page-accueil div#highlighted article p.date,
     body.page-accueil div#highlighted article h2 {
@@ -277,54 +284,278 @@ body.page-accueil div#highlighted {
       font-family: "montserrat";
       font-size: 0.875em;
       margin: 0;
-      color: #c7c7c7; }
+      color: #c7c7c7;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
     body.page-accueil div#highlighted article p,
     body.page-accueil div#highlighted article a {
       font-family: 'Gentium Book Basic'; }
     body.page-accueil div#highlighted article a {
       font-weight: bold;
       color: #fefefe; }
-body.page-accueil div.teaser-collections {
+body.page-accueil div.teaser-expositions {
   *zoom: 1;
   max-width: 960px;
   margin-left: auto;
   margin-right: auto; }
-  body.page-accueil div.teaser-collections:before, body.page-accueil div.teaser-collections:after {
+  body.page-accueil div.teaser-expositions:before, body.page-accueil div.teaser-expositions:after {
     content: " ";
     display: table; }
-  body.page-accueil div.teaser-collections:after {
+  body.page-accueil div.teaser-expositions:after {
     clear: both; }
-  body.page-accueil div.teaser-collections div.views-row-1 {
+  body.page-accueil div.teaser-expositions div.view-content {
+    overflow: hidden; }
+  body.page-accueil div.teaser-expositions div.views-row-1 {
     float: left;
     display: block;
-    width: 59.03614%;
-    float: none; }
-    body.page-accueil div.teaser-collections div.views-row-1:last-child {
+    width: 59.03614%; }
+    body.page-accueil div.teaser-expositions div.views-row-1:last-child {
       width: 57.83133%; }
-    body.page-accueil div.teaser-collections div.views-row-1 article {
+    body.page-accueil div.teaser-expositions div.views-row-1 article {
       background-color: #fefefe;
-      overflow: hidden; }
-      body.page-accueil div.teaser-collections div.views-row-1 article aside {
+      overflow: hidden;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+      body.page-accueil div.teaser-expositions div.views-row-1 article:hover {
+        background-color: #a4942a;
+        color: #fefefe; }
+        body.page-accueil div.teaser-expositions div.views-row-1 article:hover div.headings p.date {
+          color: rgba(254, 254, 254, 0.75); }
+        body.page-accueil div.teaser-expositions div.views-row-1 article:hover > p:before {
+          background-color: #fefefe; }
+        body.page-accueil div.teaser-expositions div.views-row-1 article:hover > p a {
+          color: #fefefe; }
+      body.page-accueil div.teaser-expositions div.views-row-1 article aside {
         float: left;
         display: block;
         width: 58.33333%;
         line-height: 0; }
-        body.page-accueil div.teaser-collections div.views-row-1 article aside:last-child {
+        body.page-accueil div.teaser-expositions div.views-row-1 article aside:last-child {
           width: 56.25%; }
-        body.page-accueil div.teaser-collections div.views-row-1 article aside img {
-          width: 100%; }
-  body.page-accueil div.teaser-collections div.headings h1,
-  body.page-accueil div.teaser-collections div.headings h2,
-  body.page-accueil div.teaser-collections div.headings p.date {
-    font-family: 'montserrat'; }
-  body.page-accueil div.teaser-collections div.headings h1 {
-    font-size: 1.5em; }
-  body.page-accueil div.teaser-collections div.headings h2 {
-    font-size: 0.875em;
-    font-style: italic; }
-  body.page-accueil div.teaser-collections div.headings p.date {
-    font-size: 0.875em;
-    color: #a8a8a8; }
+        body.page-accueil div.teaser-expositions div.views-row-1 article aside img {
+          width: 100%;
+          height: auto; }
+      body.page-accueil div.teaser-expositions div.views-row-1 article div.headings {
+        float: left;
+        display: block;
+        margin-right: 2.08333%;
+        width: 41.66667%;
+        margin-right: 0;
+        padding: 1.25em 1.875em 0;
+        float: right; }
+        body.page-accueil div.teaser-expositions div.views-row-1 article div.headings:last-child {
+          margin-right: 0; }
+        body.page-accueil div.teaser-expositions div.views-row-1 article div.headings h1,
+        body.page-accueil div.teaser-expositions div.views-row-1 article div.headings h2,
+        body.page-accueil div.teaser-expositions div.views-row-1 article div.headings p.date {
+          font-family: 'montserrat'; }
+        body.page-accueil div.teaser-expositions div.views-row-1 article div.headings h1 {
+          font-size: 1.5em;
+          font-weight: bold;
+          padding: 0; }
+        body.page-accueil div.teaser-expositions div.views-row-1 article div.headings h2 {
+          font-size: 0.875em;
+          font-style: italic;
+          font-weight: bold; }
+        body.page-accueil div.teaser-expositions div.views-row-1 article div.headings p.date {
+          font-size: 0.875em;
+          color: #a8a8a8;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out; }
+      body.page-accueil div.teaser-expositions div.views-row-1 article > p {
+        float: left;
+        display: block;
+        margin-right: 2.08333%;
+        width: 41.66667%;
+        margin-right: 0;
+        padding: 1.25em 1.875em;
+        float: right;
+        font-family: 'Gentium Book Basic'; }
+        body.page-accueil div.teaser-expositions div.views-row-1 article > p:last-child {
+          margin-right: 0; }
+        body.page-accueil div.teaser-expositions div.views-row-1 article > p:before {
+          content: "";
+          display: block;
+          width: 1.875em;
+          height: 1px;
+          background-color: black;
+          margin-bottom: 1.875em;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out; }
+        body.page-accueil div.teaser-expositions div.views-row-1 article > p a {
+          margin-top: 1.875em;
+          display: block;
+          color: black;
+          font-weight: bold;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out; }
+  body.page-accueil div.teaser-expositions div.views-row-2, body.page-accueil div.teaser-expositions div.views-row-3 {
+    float: left;
+    display: block;
+    margin-right: 1.20482%;
+    width: 40.96386%;
+    margin-right: 0; }
+    body.page-accueil div.teaser-expositions div.views-row-2:last-child, body.page-accueil div.teaser-expositions div.views-row-3:last-child {
+      margin-right: 0; }
+    body.page-accueil div.teaser-expositions div.views-row-2 article, body.page-accueil div.teaser-expositions div.views-row-3 article {
+      background-color: #fefefe;
+      overflow: hidden;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      height: 165px; }
+      body.page-accueil div.teaser-expositions div.views-row-2 article:hover, body.page-accueil div.teaser-expositions div.views-row-3 article:hover {
+        background-color: #a4942a;
+        color: #fefefe; }
+        body.page-accueil div.teaser-expositions div.views-row-2 article:hover div.headings p.date, body.page-accueil div.teaser-expositions div.views-row-3 article:hover div.headings p.date {
+          color: rgba(254, 254, 254, 0.75); }
+      body.page-accueil div.teaser-expositions div.views-row-2 article aside, body.page-accueil div.teaser-expositions div.views-row-3 article aside {
+        width: 50%;
+        margin-right: 0;
+        line-height: 0; }
+        body.page-accueil div.teaser-expositions div.views-row-2 article aside img, body.page-accueil div.teaser-expositions div.views-row-3 article aside img {
+          width: 100%;
+          height: auto; }
+      body.page-accueil div.teaser-expositions div.views-row-2 article div.headings, body.page-accueil div.teaser-expositions div.views-row-3 article div.headings {
+        float: left;
+        display: block;
+        margin-right: 2.94118%;
+        width: 48.52941%;
+        margin-right: 0;
+        padding: 1.25em 1.875em 0;
+        float: right; }
+        body.page-accueil div.teaser-expositions div.views-row-2 article div.headings:last-child, body.page-accueil div.teaser-expositions div.views-row-3 article div.headings:last-child {
+          margin-right: 0; }
+        body.page-accueil div.teaser-expositions div.views-row-2 article div.headings h1,
+        body.page-accueil div.teaser-expositions div.views-row-2 article div.headings h2,
+        body.page-accueil div.teaser-expositions div.views-row-2 article div.headings p.date, body.page-accueil div.teaser-expositions div.views-row-3 article div.headings h1,
+        body.page-accueil div.teaser-expositions div.views-row-3 article div.headings h2,
+        body.page-accueil div.teaser-expositions div.views-row-3 article div.headings p.date {
+          font-family: 'montserrat'; }
+        body.page-accueil div.teaser-expositions div.views-row-2 article div.headings h1, body.page-accueil div.teaser-expositions div.views-row-3 article div.headings h1 {
+          font-size: 1.5em;
+          font-weight: bold;
+          padding: 0; }
+        body.page-accueil div.teaser-expositions div.views-row-2 article div.headings h2, body.page-accueil div.teaser-expositions div.views-row-3 article div.headings h2 {
+          font-size: 0.875em;
+          font-style: italic;
+          font-weight: bold; }
+        body.page-accueil div.teaser-expositions div.views-row-2 article div.headings p.date, body.page-accueil div.teaser-expositions div.views-row-3 article div.headings p.date {
+          font-size: 0.875em;
+          color: #a8a8a8;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out; }
+      body.page-accueil div.teaser-expositions div.views-row-2 article > p, body.page-accueil div.teaser-expositions div.views-row-3 article > p {
+        display: none; }
+  body.page-accueil div.teaser-expositions div.views-row-3 article aside {
+    float: right; }
+body.page-accueil div.teaser-collections {
+  background-image: url("../images/Bkg_one.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 3.75em 0 7.5em; }
+  body.page-accueil div.teaser-collections div.view-content,
+  body.page-accueil div.teaser-collections h2.pane-title {
+    *zoom: 1;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'montserrat';
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.125em; }
+    body.page-accueil div.teaser-collections div.view-content:before, body.page-accueil div.teaser-collections div.view-content:after,
+    body.page-accueil div.teaser-collections h2.pane-title:before,
+    body.page-accueil div.teaser-collections h2.pane-title:after {
+      content: " ";
+      display: table; }
+    body.page-accueil div.teaser-collections div.view-content:after,
+    body.page-accueil div.teaser-collections h2.pane-title:after {
+      clear: both; }
+  body.page-accueil div.teaser-collections div.more-link {
+    *zoom: 1;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto; }
+    body.page-accueil div.teaser-collections div.more-link:before, body.page-accueil div.teaser-collections div.more-link:after {
+      content: " ";
+      display: table; }
+    body.page-accueil div.teaser-collections div.more-link:after {
+      clear: both; }
+    body.page-accueil div.teaser-collections div.more-link a {
+      float: left;
+      display: block;
+      margin-right: 1.20482%;
+      width: 49.39759%;
+      margin-left: 50.60241%;
+      margin-top: -40%;
+      position: relative;
+      border-bottom: 1px solid black;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+      body.page-accueil div.teaser-collections div.more-link a:last-child {
+        margin-right: 0; }
+      body.page-accueil div.teaser-collections div.more-link a span {
+        background-color: black;
+        padding: 0.625em 1.25em;
+        color: white;
+        font-family: 'Gentium Book Basic';
+        display: inline-block;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+      body.page-accueil div.teaser-collections div.more-link a:hover {
+        border-bottom: 1px solid #a4942a; }
+        body.page-accueil div.teaser-collections div.more-link a:hover span {
+          background-color: #a4942a; }
+  body.page-accueil div.teaser-collections div.views-row {
+    width: 33.3333%;
+    position: relative;
+    float: left; }
+    body.page-accueil div.teaser-collections div.views-row:hover div.headings {
+      background-color: #a4942a;
+      color: #fefefe; }
+      body.page-accueil div.teaser-collections div.views-row:hover div.headings p.date {
+        color: rgba(254, 254, 254, 0.75); }
+    body.page-accueil div.teaser-collections div.views-row img {
+      width: 100%;
+      height: auto; }
+    body.page-accueil div.teaser-collections div.views-row div.headings {
+      width: 50%;
+      margin-left: 1.25em;
+      position: absolute;
+      z-index: 1;
+      background-color: #fefefe;
+      padding: 0.625em 1.25em;
+      bottom: -3.125em;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+      body.page-accueil div.teaser-collections div.views-row div.headings h1,
+      body.page-accueil div.teaser-collections div.views-row div.headings h2,
+      body.page-accueil div.teaser-collections div.views-row div.headings p.date {
+        font-family: 'montserrat'; }
+      body.page-accueil div.teaser-collections div.views-row div.headings h1 {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 0; }
+      body.page-accueil div.teaser-collections div.views-row div.headings h2 {
+        font-size: 0.875em;
+        font-style: italic;
+        font-weight: bold; }
+      body.page-accueil div.teaser-collections div.views-row div.headings p.date {
+        font-size: 0.875em;
+        color: #a8a8a8;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
 
 body.page-collections h1#page-title,
 body.page-collections h2.pane-title, body.page-expositions h1#page-title,

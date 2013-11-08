@@ -21,9 +21,19 @@ body
 			{
 				@include span-columns(6);
 				@include pad(em(30));
+				@include transition(all $speed ease-in-out);
 				float: none;
 				background-color: black;
 				color: $white;
+
+				&:hover
+				{
+					background-color: $gold;
+					p.date
+					{
+						color: transparentize($white, .25);
+					}
+				}
 
 				h1,
 				p.date,
@@ -55,6 +65,7 @@ body
 					font-size: em(14);
 					margin: 0;
 					color: $light-gray;
+					@include transition(all $speed ease-in-out);
 				}
 
 				p,
@@ -72,59 +83,343 @@ body
 
 		}
 
-		div.teaser-collections
+		div.teaser-expositions
 		{
 			@include outer-container();
 
-			div.views-row-1
-			{	
-				@include span-columns(7 of 12, block-collapse);
-				float: none;
-				article
+			div.view-content
+			{
+				overflow: hidden;
+			}
+			
+
+			div
+			{
+				&.views-row-1
 				{
-					background-color: $white;
-					overflow: hidden;
-
-					aside
+					@include span-columns(7 of 12, block-collapse);
+					article
 					{
-						@include span-columns(4 of 7, block-collapse);
-						line-height: 0;
+						background-color: $white;
+						overflow: hidden;
+						@include transition(all $speed ease-in-out);
 
-						img
+						&:hover
 						{
-							@include fill-parent();
+							background-color: $gold;
+							color: $white;
+							div.headings
+							{
+								p.date
+								{
+									color: transparentize($white, .25);
+								}						
+							}
+
+							&>p
+							{
+								&:before
+								{
+									background-color: $white;
+								}
+
+								a
+								{
+									color: $white;
+								}
+							}
+						}
+
+						aside
+						{
+							@include span-columns(4 of 7, block-collapse);
+							line-height: 0;
+
+							img
+							{
+								@include fill-parent();
+								height: auto;
+							}
+						}
+
+						div.headings
+						{
+							@include span-columns(3 of 7);
+							@include omega();
+							@include pad(em(20) em(30) 0);
+							float: right;
+
+							h1,
+							h2,
+							p.date
+							{
+								font-family: 'montserrat';
+							}
+
+							h1
+							{
+								font-size: em(24);
+								font-weight: bold;
+								padding: 0;
+							}
+
+							h2
+							{
+								font-size: em(14);
+								font-style: italic;
+								font-weight: bold;
+							}
+
+							p.date
+							{
+								font-size: em(14);
+								color: $gray;
+								@include transition(all $speed ease-in-out);
+							}
+						}
+						&>p
+						{
+							@include span-columns(3 of 7);
+							@include omega();
+							@include pad(em(20) em(30));
+							float: right;
+							font-family: 'Gentium Book Basic';
+
+							&:before
+							{
+								content: "";
+								display: block;
+								width: em(30);
+								height: 1px;
+								background-color: black;
+								margin-bottom: em(30);
+								@include transition(all $speed ease-in-out);
+							}
+
+							a
+							{
+								margin-top: em(30);
+								display: block;
+								color: black;
+								font-weight: bold;
+								@include transition(all $speed ease-in-out);
+							}
+						}	
+					}	
+				}	
+				
+				&.views-row-2,
+				&.views-row-3
+				{
+					@include span-columns(5 of 12);
+					@include omega();
+					article
+					{
+						background-color: $white;
+						overflow: hidden;
+						@include transition(all $speed ease-in-out);
+						height: $teaser-size/2;
+
+						&:hover
+						{
+							background-color: $gold;
+							color: $white;
+							div.headings
+							{
+								p.date
+								{
+									color: transparentize($white, .25);
+								}						
+							}
+						}
+
+						aside
+						{
+							width: 50%;
+							@include omega();
+							line-height: 0;
+
+							img
+							{
+								@include fill-parent();
+								height: auto;
+							}
+						}
+
+						div.headings
+						{
+							@include span-columns(2.5 of 5);
+							@include omega;
+							@include pad(em(20) em(30) 0);
+							float: right;
+
+							h1,
+							h2,
+							p.date
+							{
+								font-family: 'montserrat';
+							}
+
+							h1
+							{
+								font-size: em(24);
+								font-weight: bold;
+								padding: 0;
+							}
+
+							h2
+							{
+								font-size: em(14);
+								font-style: italic;
+								font-weight: bold;
+							}
+
+							p.date
+							{
+								font-size: em(14);
+								color: $gray;
+								@include transition(all $speed ease-in-out);
+							}
+						}
+
+						&>p
+						{
+							display: none;
 						}
 					}
-				}				
+				}
+
+				&.views-row-3
+				{
+					article
+					{
+						aside
+						{
+							float: right;
+						}
+					}
+				}			
+			}
+		}
+
+		div.teaser-collections
+		{
+
+			background-image: url("../images/Bkg_one.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			@include pad(em(60) 0 em(120));
+
+			div.view-content,
+			h2.pane-title
+			{
+				@include outer-container();
+				font-family: 'montserrat';
+				font-weight: bold;
+				text-transform: uppercase;
+				letter-spacing: em(2);
 			}
 
-			div.headings
+			div.more-link
 			{
-				h1,
-				h2,
-				p.date
+				@include outer-container();
+				a
 				{
-					font-family: 'montserrat';
+					@include span-columns(6);
+					@include shift(6);
+					margin-top: -40%;
+					position: relative;
+					border-bottom: 1px solid black;
+					@include transition(all $speed ease-in-out);
+					
+					span
+					{
+						background-color: black;
+						@include pad(em(10) em(20));
+						color: white;
+						font-family: 'Gentium Book Basic';
+						display: inline-block;
+						@include transition(all $speed ease-in-out);
+					}
+
+					&:hover
+					{
+						border-bottom: 1px solid $gold;
+						span
+						{
+							background-color: $gold;
+						}
+					}
+				}
+			}
+
+			div.views-row
+			{
+
+				&:hover
+				{
+					div.headings
+					{
+						background-color: $gold;
+						color: $white;
+
+						p.date
+						{
+							color: transparentize($white, .25);
+						}
+					}
 				}
 
-				h1
+				width: 33.3333%;
+				position: relative;
+				float: left;
+
+				img
 				{
-					font-size: em(24);
+					@include fill-parent();
+					height: auto;
 				}
 
-				h2
+				div.headings
 				{
-					font-size: em(14);
-					font-style: italic;
-				}
+					width: 50%;
+					margin-left: em(20);
+					position: absolute;
+					z-index: 1;
+					background-color: $white;
+					@include pad(em(10) em(20));
+					bottom: em(-50);
+					@include transition(all $speed ease-in-out);
 
-				p.date
-				{
-					font-size: em(14);
-					color: $gray;
-				}
-			}				
+					h1,
+					h2,
+					p.date
+					{
+						font-family: 'montserrat';
+					}
 
+					h1
+					{
+						font-size: em(24);
+						font-weight: bold;
+						padding: 0;
+					}
+
+					h2
+					{
+						font-size: em(14);
+						font-style: italic;
+						font-weight: bold;
+					}
+
+					p.date
+					{
+						font-size: em(14);
+						color: $gray;
+						@include transition(all $speed ease-in-out);
+					}
+				}
+			}
 		}
 	}
 }
