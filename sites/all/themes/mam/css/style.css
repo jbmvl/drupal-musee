@@ -233,6 +233,8 @@ body:before {
       background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0, red 0, red 10.90909%, rgba(0, 0, 0, 0) 10.90909%, rgba(0, 0, 0, 0) 12.72727%, red 12.72727%, red 23.63636%, rgba(0, 0, 0, 0) 23.63636%, rgba(0, 0, 0, 0) 25.45455%, red 25.45455%, red 36.36364%, rgba(0, 0, 0, 0) 36.36364%, rgba(0, 0, 0, 0) 38.18182%, red 38.18182%, red 49.09091%, rgba(0, 0, 0, 0) 49.09091%, rgba(0, 0, 0, 0) 50.90909%, red 50.90909%, red 61.81818%, rgba(0, 0, 0, 0) 61.81818%, rgba(0, 0, 0, 0) 63.63636%, red 63.63636%, red 74.54545%, rgba(0, 0, 0, 0) 74.54545%, rgba(0, 0, 0, 0) 76.36364%, red 76.36364%, red 87.27273%, rgba(0, 0, 0, 0) 87.27273%, rgba(0, 0, 0, 0) 89.09091%, red 89.09091%, red 100.0%, rgba(0, 0, 0, 0) 100.0%);
       background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0, red 0, red 10.90909%, rgba(0, 0, 0, 0) 10.90909%, rgba(0, 0, 0, 0) 12.72727%, red 12.72727%, red 23.63636%, rgba(0, 0, 0, 0) 23.63636%, rgba(0, 0, 0, 0) 25.45455%, red 25.45455%, red 36.36364%, rgba(0, 0, 0, 0) 36.36364%, rgba(0, 0, 0, 0) 38.18182%, red 38.18182%, red 49.09091%, rgba(0, 0, 0, 0) 49.09091%, rgba(0, 0, 0, 0) 50.90909%, red 50.90909%, red 61.81818%, rgba(0, 0, 0, 0) 61.81818%, rgba(0, 0, 0, 0) 63.63636%, red 63.63636%, red 74.54545%, rgba(0, 0, 0, 0) 74.54545%, rgba(0, 0, 0, 0) 76.36364%, red 76.36364%, red 87.27273%, rgba(0, 0, 0, 0) 87.27273%, rgba(0, 0, 0, 0) 89.09091%, red 89.09091%, red 100.0%, rgba(0, 0, 0, 0) 100.0%); } }
 
+body.page-accueil #content {
+  margin-top: -2px; }
 body.page-accueil h1#page-title {
   display: none; }
 body.page-accueil div#highlighted {
@@ -245,8 +247,15 @@ body.page-accueil div#highlighted {
     display: table; }
   body.page-accueil div#highlighted:after {
     clear: both; }
+  body.page-accueil div#highlighted img {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    left: 0; }
   body.page-accueil div#highlighted h2.pane-title {
     display: none; }
+  body.page-accueil div#highlighted div.views-field-nothing {
+    padding-top: 25%; }
   body.page-accueil div#highlighted article {
     float: left;
     display: block;
@@ -923,15 +932,6 @@ body {
       display: table; }
     body .container:after {
       clear: both; }
-  body img {
-    position: relative; }
-    body img:before {
-      content: "";
-      background-image: url("../images/trame.png");
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      z-index: 1; }
   body div#header {
     margin-top: 0;
     -webkit-transition: all 0.45s ease-in-out;

@@ -3,6 +3,10 @@ body
 {
 	&.page-accueil
 	{
+		#content
+		{
+			margin-top: -2px;
+		}
 		h1#page-title
 		{
 			display: none;
@@ -11,10 +15,23 @@ body
 		div#highlighted
 		{
 			@include outer-container();
+
+			img
+			{
+				position: absolute;
+				max-width: 100%;
+				height: auto;
+				left: 0;
+			}
 			
 			h2.pane-title
 			{
 				display: none;
+			}
+
+			div.views-field-nothing
+			{
+				padding-top: 25%;
 			}
 
 			article
